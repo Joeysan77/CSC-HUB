@@ -1886,6 +1886,88 @@
 .aspri-xl:active { box-shadow: 0 0 20px rgba(27,20,94,1); }
 .cpri-xl { caret-color: rgba(27,20,94,1); }
 .acpri-xl:active { caret-color: rgba(27,20,94,1); }
+.green2 { background-color: rgba(1,144,92,1); color:white; }
+.tgreen2 { color: rgba(1,144,92,1); }
+.bgreen2 { border-color: rgba(1,144,92,1); }
+.sgreen2 { box-shadow: 0 0 20px rgba(1,144,92,1); }
+.hgreen2:hover { background-color: rgba(1,144,92,1); }
+.htgreen2:hover { color: rgba(1,144,92,1); }
+.hbgreen2:hover { border-color: rgba(1,144,92,1); }
+.hsgreen2:hover { box-shadow: 0 0 20px rgba(1,144,92,1); }
+.agreen2:active { background-color: rgba(1,144,92,1); }
+.atgreen2:active { color: rgba(1,144,92,1); }
+.abgreen2:active { border-color: rgba(1,144,92,1); }
+.asgreen2:active { box-shadow: 0 0 20px rgba(1,144,92,1); }
+.green2-xs { background-color: rgba(1,144,92,0.05); }
+.hgreen2-xs:hover { background-color: rgba(1,144,92,0.05); }
+.agreen2-xs:active { background-color: rgba(1,144,92,0.05); }
+.tgreen2-xs { color: rgba(1,144,92,0.05); }
+.htgreen2-xs:hover { color: rgba(1,144,92,0.05); }
+.atgreen2-xs:active { color: rgba(1,144,92,0.05); }
+.bgreen2-xs { border-color: rgba(1,144,92,0.05); }
+.hbgreen2-xs:hover { border-color: rgba(1,144,92,0.05); }
+.abgreen2-xs:active { border-color: rgba(1,144,92,0.05); }
+.sgreen2-xs { box-shadow: 0 0 20px rgba(1,144,92,0.05); }
+.hsgreen2-xs:hover { box-shadow: 0 0 20px rgba(1,144,92,0.05); }
+.asgreen2-xs:active { box-shadow: 0 0 20px rgba(1,144,92,0.05); }
+.cgreen2-xs { caret-color: rgba(1,144,92,0.05); }
+.acgreen2-xs:active { caret-color: rgba(1,144,92,0.05); }
+.green2-sm { background-color: rgba(1,144,92,0.2); }
+.hgreen2-sm:hover { background-color: rgba(1,144,92,0.2); }
+.agreen2-sm:active { background-color: rgba(1,144,92,0.2); }
+.tgreen2-sm { color: rgba(1,144,92,0.2); }
+.htgreen2-sm:hover { color: rgba(1,144,92,0.2); }
+.atgreen2-sm:active { color: rgba(1,144,92,0.2); }
+.bgreen2-sm { border-color: rgba(1,144,92,0.2); }
+.hbgreen2-sm:hover { border-color: rgba(1,144,92,0.2); }
+.abgreen2-sm:active { border-color: rgba(1,144,92,0.2); }
+.sgreen2-sm { box-shadow: 0 0 20px rgba(1,144,92,0.2); }
+.hsgreen2-sm:hover { box-shadow: 0 0 20px rgba(1,144,92,0.2); }
+.asgreen2-sm:active { box-shadow: 0 0 20px rgba(1,144,92,0.2); }
+.cgreen2-sm { caret-color: rgba(1,144,92,0.2); }
+.acgreen2-sm:active { caret-color: rgba(1,144,92,0.2); }
+.green2-md { background-color: rgba(1,144,92,0.5); }
+.hgreen2-md:hover { background-color: rgba(1,144,92,0.5); }
+.agreen2-md:active { background-color: rgba(1,144,92,0.5); }
+.tgreen2-md { color: rgba(1,144,92,0.5); }
+.htgreen2-md:hover { color: rgba(1,144,92,0.5); }
+.atgreen2-md:active { color: rgba(1,144,92,0.5); }
+.bgreen2-md { border-color: rgba(1,144,92,0.5); }
+.hbgreen2-md:hover { border-color: rgba(1,144,92,0.5); }
+.abgreen2-md:active { border-color: rgba(1,144,92,0.5); }
+.sgreen2-md { box-shadow: 0 0 20px rgba(1,144,92,0.5); }
+.hsgreen2-md:hover { box-shadow: 0 0 20px rgba(1,144,92,0.5); }
+.asgreen2-md:active { box-shadow: 0 0 20px rgba(1,144,92,0.5); }
+.cgreen2-md { caret-color: rgba(1,144,92,0.5); }
+.acgreen2-md:active { caret-color: rgba(1,144,92,0.5); }
+.green2-lg { background-color: rgba(1,144,92,0.8); }
+.hgreen2-lg:hover { background-color: rgba(1,144,92,0.8); }
+.agreen2-lg:active { background-color: rgba(1,144,92,0.8); }
+.tgreen2-lg { color: rgba(1,144,92,0.8); }
+.htgreen2-lg:hover { color: rgba(1,144,92,0.8); }
+.atgreen2-lg:active { color: rgba(1,144,92,0.8); }
+.bgreen2-lg { border-color: rgba(1,144,92,0.8); }
+.hbgreen2-lg:hover { border-color: rgba(1,144,92,0.8); }
+.abgreen2-lg:active { border-color: rgba(1,144,92,0.8); }
+.sgreen2-lg { box-shadow: 0 0 20px rgba(1,144,92,0.8); }
+.hsgreen2-lg:hover { box-shadow: 0 0 20px rgba(1,144,92,0.8); }
+.asgreen2-lg:active { box-shadow: 0 0 20px rgba(1,144,92,0.8); }
+.cgreen2-lg { caret-color: rgba(1,144,92,0.8); }
+.acgreen2-lg:active { caret-color: rgba(1,144,92,0.8); }
+.green2-xl { background-color: rgba(1,144,92,1); }
+.hgreen2-xl:hover { background-color: rgba(1,144,92,1); }
+.agreen2-xl:active { background-color: rgba(1,144,92,1); }
+.tgreen2-xl { color: rgba(1,144,92,1); }
+.htgreen2-xl:hover { color: rgba(1,144,92,1); }
+.atgreen2-xl:active { color: rgba(1,144,92,1); }
+.bgreen2-xl { border-color: rgba(1,144,92,1); }
+.hbgreen2-xl:hover { border-color: rgba(1,144,92,1); }
+.abgreen2-xl:active { border-color: rgba(1,144,92,1); }
+.sgreen2-xl { box-shadow: 0 0 20px rgba(1,144,92,1); }
+.hsgreen2-xl:hover { box-shadow: 0 0 20px rgba(1,144,92,1); }
+.asgreen2-xl:active { box-shadow: 0 0 20px rgba(1,144,92,1); }
+.cgreen2-xl { caret-color: rgba(1,144,92,1); }
+.acgreen2-xl:active { caret-color: rgba(1,144,92,1); }
 .s-sm { box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
 .hs-sm:hover { box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
 .as-sm:active { box-shadow: 0 2px 4px rgba(0,0,0,0.2); }
@@ -2234,6 +2316,21 @@
 .s-sm-pri-xl { box-shadow: 0 2px 4px rgba(27,20,94,1); }
 .hs-sm-pri-xl:hover { box-shadow: 0 2px 4px rgba(27,20,94,1); }
 .as-sm-pri-xl:active { box-shadow: 0 2px 4px rgba(27,20,94,1); }
+.s-sm-green2-xs { box-shadow: 0 2px 4px rgba(1,144,92,0.05); }
+.hs-sm-green2-xs:hover { box-shadow: 0 2px 4px rgba(1,144,92,0.05); }
+.as-sm-green2-xs:active { box-shadow: 0 2px 4px rgba(1,144,92,0.05); }
+.s-sm-green2-sm { box-shadow: 0 2px 4px rgba(1,144,92,0.2); }
+.hs-sm-green2-sm:hover { box-shadow: 0 2px 4px rgba(1,144,92,0.2); }
+.as-sm-green2-sm:active { box-shadow: 0 2px 4px rgba(1,144,92,0.2); }
+.s-sm-green2-md { box-shadow: 0 2px 4px rgba(1,144,92,0.5); }
+.hs-sm-green2-md:hover { box-shadow: 0 2px 4px rgba(1,144,92,0.5); }
+.as-sm-green2-md:active { box-shadow: 0 2px 4px rgba(1,144,92,0.5); }
+.s-sm-green2-lg { box-shadow: 0 2px 4px rgba(1,144,92,0.8); }
+.hs-sm-green2-lg:hover { box-shadow: 0 2px 4px rgba(1,144,92,0.8); }
+.as-sm-green2-lg:active { box-shadow: 0 2px 4px rgba(1,144,92,0.8); }
+.s-sm-green2-xl { box-shadow: 0 2px 4px rgba(1,144,92,1); }
+.hs-sm-green2-xl:hover { box-shadow: 0 2px 4px rgba(1,144,92,1); }
+.as-sm-green2-xl:active { box-shadow: 0 2px 4px rgba(1,144,92,1); }
 .s-md { box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
 .hs-md:hover { box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
 .as-md:active { box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
@@ -2582,6 +2679,21 @@
 .s-md-pri-xl { box-shadow: 0 4px 6px rgba(27,20,94,1); }
 .hs-md-pri-xl:hover { box-shadow: 0 4px 6px rgba(27,20,94,1); }
 .as-md-pri-xl:active { box-shadow: 0 4px 6px rgba(27,20,94,1); }
+.s-md-green2-xs { box-shadow: 0 4px 6px rgba(1,144,92,0.05); }
+.hs-md-green2-xs:hover { box-shadow: 0 4px 6px rgba(1,144,92,0.05); }
+.as-md-green2-xs:active { box-shadow: 0 4px 6px rgba(1,144,92,0.05); }
+.s-md-green2-sm { box-shadow: 0 4px 6px rgba(1,144,92,0.2); }
+.hs-md-green2-sm:hover { box-shadow: 0 4px 6px rgba(1,144,92,0.2); }
+.as-md-green2-sm:active { box-shadow: 0 4px 6px rgba(1,144,92,0.2); }
+.s-md-green2-md { box-shadow: 0 4px 6px rgba(1,144,92,0.5); }
+.hs-md-green2-md:hover { box-shadow: 0 4px 6px rgba(1,144,92,0.5); }
+.as-md-green2-md:active { box-shadow: 0 4px 6px rgba(1,144,92,0.5); }
+.s-md-green2-lg { box-shadow: 0 4px 6px rgba(1,144,92,0.8); }
+.hs-md-green2-lg:hover { box-shadow: 0 4px 6px rgba(1,144,92,0.8); }
+.as-md-green2-lg:active { box-shadow: 0 4px 6px rgba(1,144,92,0.8); }
+.s-md-green2-xl { box-shadow: 0 4px 6px rgba(1,144,92,1); }
+.hs-md-green2-xl:hover { box-shadow: 0 4px 6px rgba(1,144,92,1); }
+.as-md-green2-xl:active { box-shadow: 0 4px 6px rgba(1,144,92,1); }
 .s-lg { box-shadow: 0 10px 15px rgba(0,0,0,0.2); }
 .hs-lg:hover { box-shadow: 0 10px 15px rgba(0,0,0,0.2); }
 .as-lg:active { box-shadow: 0 10px 15px rgba(0,0,0,0.2); }
@@ -2930,6 +3042,21 @@
 .s-lg-pri-xl { box-shadow: 0 10px 15px rgba(27,20,94,1); }
 .hs-lg-pri-xl:hover { box-shadow: 0 10px 15px rgba(27,20,94,1); }
 .as-lg-pri-xl:active { box-shadow: 0 10px 15px rgba(27,20,94,1); }
+.s-lg-green2-xs { box-shadow: 0 10px 15px rgba(1,144,92,0.05); }
+.hs-lg-green2-xs:hover { box-shadow: 0 10px 15px rgba(1,144,92,0.05); }
+.as-lg-green2-xs:active { box-shadow: 0 10px 15px rgba(1,144,92,0.05); }
+.s-lg-green2-sm { box-shadow: 0 10px 15px rgba(1,144,92,0.2); }
+.hs-lg-green2-sm:hover { box-shadow: 0 10px 15px rgba(1,144,92,0.2); }
+.as-lg-green2-sm:active { box-shadow: 0 10px 15px rgba(1,144,92,0.2); }
+.s-lg-green2-md { box-shadow: 0 10px 15px rgba(1,144,92,0.5); }
+.hs-lg-green2-md:hover { box-shadow: 0 10px 15px rgba(1,144,92,0.5); }
+.as-lg-green2-md:active { box-shadow: 0 10px 15px rgba(1,144,92,0.5); }
+.s-lg-green2-lg { box-shadow: 0 10px 15px rgba(1,144,92,0.8); }
+.hs-lg-green2-lg:hover { box-shadow: 0 10px 15px rgba(1,144,92,0.8); }
+.as-lg-green2-lg:active { box-shadow: 0 10px 15px rgba(1,144,92,0.8); }
+.s-lg-green2-xl { box-shadow: 0 10px 15px rgba(1,144,92,1); }
+.hs-lg-green2-xl:hover { box-shadow: 0 10px 15px rgba(1,144,92,1); }
+.as-lg-green2-xl:active { box-shadow: 0 10px 15px rgba(1,144,92,1); }
 .s-xl { box-shadow: 0 20px 25px rgba(0,0,0,0.2); }
 .hs-xl:hover { box-shadow: 0 20px 25px rgba(0,0,0,0.2); }
 .as-xl:active { box-shadow: 0 20px 25px rgba(0,0,0,0.2); }
@@ -3278,3 +3405,18 @@
 .s-xl-pri-xl { box-shadow: 0 20px 25px rgba(27,20,94,1); }
 .hs-xl-pri-xl:hover { box-shadow: 0 20px 25px rgba(27,20,94,1); }
 .as-xl-pri-xl:active { box-shadow: 0 20px 25px rgba(27,20,94,1); }
+.s-xl-green2-xs { box-shadow: 0 20px 25px rgba(1,144,92,0.05); }
+.hs-xl-green2-xs:hover { box-shadow: 0 20px 25px rgba(1,144,92,0.05); }
+.as-xl-green2-xs:active { box-shadow: 0 20px 25px rgba(1,144,92,0.05); }
+.s-xl-green2-sm { box-shadow: 0 20px 25px rgba(1,144,92,0.2); }
+.hs-xl-green2-sm:hover { box-shadow: 0 20px 25px rgba(1,144,92,0.2); }
+.as-xl-green2-sm:active { box-shadow: 0 20px 25px rgba(1,144,92,0.2); }
+.s-xl-green2-md { box-shadow: 0 20px 25px rgba(1,144,92,0.5); }
+.hs-xl-green2-md:hover { box-shadow: 0 20px 25px rgba(1,144,92,0.5); }
+.as-xl-green2-md:active { box-shadow: 0 20px 25px rgba(1,144,92,0.5); }
+.s-xl-green2-lg { box-shadow: 0 20px 25px rgba(1,144,92,0.8); }
+.hs-xl-green2-lg:hover { box-shadow: 0 20px 25px rgba(1,144,92,0.8); }
+.as-xl-green2-lg:active { box-shadow: 0 20px 25px rgba(1,144,92,0.8); }
+.s-xl-green2-xl { box-shadow: 0 20px 25px rgba(1,144,92,1); }
+.hs-xl-green2-xl:hover { box-shadow: 0 20px 25px rgba(1,144,92,1); }
+.as-xl-green2-xl:active { box-shadow: 0 20px 25px rgba(1,144,92,1); }

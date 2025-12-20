@@ -1,10 +1,12 @@
+import {Link} from 'react-router-dom'
+
 export default function Announcement() {
     return (
     <div>
-        <div className="flex between text-sm w90 tpri-lg ">
+        <Link to="/announcements" className="flex between text-sm w90 tpri-lg ">
             <p>Announcements Page</p>
             <i className="fal fa-arrow-right text-lg"></i>
-        </div>
+        </Link>
         <div className="mt-5 border rounded-lg border-black/20 w90 ">
             <div className="flex tpri-lg wfull between px-3 v-center border-b border-black/20 py-1">
                 <div className="flex gap-2 v-center">

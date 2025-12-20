@@ -3,10 +3,17 @@ import {useState} from 'react'
 
 export default function Menu({show, onClose}) {
 
-    const location= useLocation()
-    const path = location.path
+    const location = useLocation()
+    const path = location.pathname
     let active;
     
+    if (path === '/') {
+        active = 'home'
+    } else if (path === '/assignment_hub') {
+        active = 'assignment' 
+    } else if (path === '/announcements') {
+        active = 'announcements'
+    }
 
     return (
         <div className={` w-[60%] top-0 right-0 fixed bg-white rounded-l-xl h-full z-[21] ${show ? '' : 'hide translate-x-10'}`}>
@@ -17,19 +24,23 @@ export default function Menu({show, onClose}) {
                 <Button
                 icon="fa-home"
                 text="Home"
+                active={active === 'home'}
                 to="/"
                 />
                 
                 <Button
-                icon="fa-list"
+                icon="fa-book"
                 text="Assignment"
+                active={active === 'assignment'}
                 to="/assignment_hub"
                 />
                 
                 
                 <Button
                 icon="fa-speaker"
-                text="Announcements"
+                text="Annoucements"
+                active={active === 'announcements'}
+                to="/announcements"
                 />
                 
                 <Button
@@ -48,11 +59,11 @@ export default function Menu({show, onClose}) {
     )
 }
 
-function Button({icon, text, to}) {
+function Button({icon, text, to, active}) {
     return (
-        <Link to={to} className="flex py-2 gap-5 v-center my-1">
+        <Link to={to} className={`${active ? 'blue font-medium shadow' : '' } flex py-1 gap-5 v-center my-1 px-3 rounded-lg `}>
             <div className="flex center w-3 max-w-3">
-                <i className={`far ${icon} text-lg`}></i>
+                <i className={`${icon} ${active ? 'fas' : 'far'} text-lg`}></i>
             </div>
             <p className="">{text}</p>
         </Link>

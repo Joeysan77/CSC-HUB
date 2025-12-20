@@ -22,6 +22,9 @@ export default function Header() {
     } else if (path === '/assignment_hub') {
         logo = false
         page = "Assignment Hub"
+    } else if (path === '/announcements') {
+        logo = false
+        page="Announcements"
     }
     
     return (

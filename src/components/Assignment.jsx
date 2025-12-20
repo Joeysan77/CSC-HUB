@@ -9,7 +9,7 @@ export default function Assignment({subject, content, date, completed, due}) {
             <p>{content}</p>
             
             <div className="flex between text-xs px-3 my-5 v-center">
-                <p className={` ${completed ? 'green-sm tgreen' : 'orange-sm torange'} px-2 py-1 rounded`}>{completed ? 'submitted' : 'pending'}</p>
+                <p className={` ${completed ? 'green-sm tgreen' : 'orange-sm torange'} px-2 py-1 font-medium rounded`}>{completed ? 'submitted' : 'pending'}</p>
                 <div className="flex gap-2">
                     <p className="tpri font-medium">Due Date :</p>
                     <p className="">{due}</p>
