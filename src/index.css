@@ -1,0 +1,18 @@
+@import 'tailwindcss'
+@import '../styles/fonts/Inter/index.css';
+@import '../styles/fonts/Roboto/index.css';
+@import '../styles/fonts/Poppins/index.css';
+
+body {
+    font-family:'Poppins';
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+* {
+    transition: 0.25s !important;
+    box-sizing: border-box !important;
+}
+
+li {
+    display: list-item;
+}
