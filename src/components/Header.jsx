@@ -29,7 +29,7 @@ export default function Header() {
        
         <Dark
         show = {showDark}
-        zIndex="z-[10]"
+        zIndex="z-[11]"
         onClick={() => {
             setShowDark(false)
             setShowMenu(false)
