@@ -1,4 +1,6 @@
 import {Link} from 'react-router-dom'
+import {PhysicalClearance, DepartmentalClearanceDeadline} from './AnnouncementsList'
+
 
 export default function Announcement() {
     return (
@@ -13,10 +15,11 @@ export default function Announcement() {
                     <i className="fal fa-exclamation-circle text-lg "></i><p>announcements</p>
                 </div>
                 
-                <div className="tgray h-5 w-4 gray-sm flex center rounded py-1.5 px-1.5"><span className="tgray-md">0</span></div>
+                <div className="tblue h-5 w-4 blue-sm flex center rounded py-1.5 px-1.5"><span className="">2</span></div>
                 </div>
+            <DepartmentalClearanceDeadline/>
+            <PhysicalClearance/>
             
-            <p className="text-center text-sm tgray p-0 m-0 my-5 ">no announcements here</p>
         </div>
        <div className="line my-15 w90">
            

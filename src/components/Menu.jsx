@@ -26,6 +26,7 @@ export default function Menu({show, onClose}) {
                 text="Home"
                 active={active === 'home'}
                 to="/"
+                onClick={onClose}
                 />
                 
                 <Button
@@ -33,6 +34,7 @@ export default function Menu({show, onClose}) {
                 text="Assignment"
                 active={active === 'assignment'}
                 to="/assignment_hub"
+                onClick={onClose}
                 />
                 
                 
@@ -41,6 +43,7 @@ export default function Menu({show, onClose}) {
                 text="Annoucements"
                 active={active === 'announcements'}
                 to="/announcements"
+                onClick={onClose}
                 />
                 
                 <Button
@@ -59,9 +62,9 @@ export default function Menu({show, onClose}) {
     )
 }
 
-function Button({icon, text, to, active}) {
+function Button({icon, text, to, active, onClick}) {
     return (
-        <Link to={to} className={`${active ? 'blue font-medium shadow' : '' } flex py-1 gap-5 v-center my-1 px-3 rounded-lg `}>
+        <Link onClick={onClick} to={to} className={`${active ? 'blue font-medium shadow' : '' } flex py-1 gap-5 v-center my-1 px-3 rounded-lg `}>
             <div className="flex center w-3 max-w-3">
                 <i className={`${icon} ${active ? 'fas' : 'far'} text-lg`}></i>
             </div>
