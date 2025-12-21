@@ -10,7 +10,7 @@ export function PhysicalClearance() {
     let title = 'Physical Clearance Documents'
     let date = 'Mon, 3rd Nov 2025'
     let desc = 'All students are reminded to prepare and submit the required documents for physical clearance. Ensure that all documents are complete and accurate befo...'
-    
+    let status='important'
     
     return (
     <>
@@ -19,6 +19,7 @@ export function PhysicalClearance() {
          show={showOverlay}
          title={title}
          date={date}
+         status={status}
          onClose={() => {
              setShowOverlay(false)
          }}
@@ -152,7 +153,7 @@ Students are to come along with the following documents for clearance arranged i
          <Title
          title={title}
          date={date}
-         status='important'
+         status={status}
          />
          
          <p className="w90 my-3 text-sm text-black/60 text-center px-3">{desc}</p>
@@ -176,7 +177,7 @@ export function DepartmentalClearanceDeadline() {
     let title = 'Departmental Clearance Deadline'
     let date = 'Mon, 17th Nov 2025'
     let desc = "The Department has observed that out of close to 300 students, only 15 students have completed their departmental clearance.   Studen..."
-    
+    let status = 'urgent'
     
     return (
     <>
@@ -188,6 +189,7 @@ export function DepartmentalClearanceDeadline() {
          onClose={() => {
              setShowOverlay(false)
          }}
+         status={status}
          content={
              <>
              
@@ -205,7 +207,7 @@ All concerned students are advised to take this information seriously and act im
          <Title
          title={title}
          date={date}
-         status="urgent"
+         status={status}
          />
          
          <p className="w90 my-3 text-sm text-black/60 text-center px-3">{desc}</p>
