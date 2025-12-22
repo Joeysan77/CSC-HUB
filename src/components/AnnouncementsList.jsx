@@ -320,6 +320,12 @@ export function DepartmentalClearance() {
                  desc="up to 8 passports"
                  />
                  
+                 <List
+                 num="12"
+                 item="Confirmation of Admission Slip"
+                 desc="3 photocopies"
+                 />
+                 
                  
              </div>
              <p className="my-2 w90 text-black/70 text-center">Students are to note the following approved fees required for departmental clearance:</p>
