@@ -222,3 +222,150 @@ All concerned students are advised to take this information seriously and act im
     </>
     )
 }
+
+
+export function DepartmentalClearance() {
+
+    const [showOverlay, setShowOverlay] = useState(false)
+
+    let title = 'Departmental Clearance Documents'
+    let date = 'Mon, 3rd Nov 2025'
+    let desc = 'All students are hereby informed that the following documents are required for departmental clearance in the Computer Science Department. Students are advised to ensure that all document....'
+    let status='important'
+    
+    return (
+    <>
+    
+        <AnnouncementOverlay
+         show={showOverlay}
+         title={title}
+         date={date}
+         status={status}
+         onClose={() => {
+             setShowOverlay(false)
+         }}
+         content={
+             <>
+             <p className="my-2 w90 text-black/70 text-center">
+                 All students are hereby informed that the following documents are required for departmental clearance in the Computer Science Department. Students are advised to ensure that all documents are complete and properly arranged before coming for clearance.
+
+             </p>
+             
+             <div className="my-10">
+                 <List
+                 num="1"
+                 item="O-Level Certificate"
+                 desc="1 original copy"
+                 />
+                 
+                 <List
+                 num="2"
+                 item="JAMB Original Result slip"
+                 desc="1 original copy"
+                 />
+                 
+                 <List
+                 num="3"
+                 item="Duplicate of JAMB Admission letter"
+                 desc="1 original copy"
+                 />
+                 
+                 
+                 <List
+                 num="4"
+                 item="FUTO Admission letter"
+                 desc="not stated"
+                 />
+                 
+                 
+                 <List
+                 num="5"
+                 item="Letter of attestation"
+                 desc="1 photocopy"
+                 />
+                 
+                 <List
+                 num="6"
+                 item="Birth Certificate"
+                 desc="1 photocopy"
+                 />
+                 
+                 <List
+                 num="7"
+                 item="Local Govt Certification Letter"
+                 desc="1 original copy" 
+                 />
+                 
+                 <List
+                 num="8"  
+                 item="Primary School Certificate"
+                 desc="1 original copy"
+                 />
+                 
+                 <List
+                 num="9"
+                 item="3 Office Flat Files"
+                 desc=""
+                 /> 
+                 
+                 <List
+                 num="10"
+                 item="3 File Tags"
+                 desc=""
+                 />
+                 
+                 <List
+                 num="11"
+                 item="Passports"
+                 desc="up to 8 passports"
+                 />
+                 
+                 
+             </div>
+             <p className="my-2 w90 text-black/70 text-center">Students are to note the following approved fees required for departmental clearance:</p>
+             
+             <div>
+                 <List
+                 num="•"
+                 item="Departmental Dues"
+                 desc="₦10,000"
+                 /> 
+                 
+                 <List
+                 num="•"
+                 item="School/Faculty Dues"
+                 desc="₦5,000"
+                 />
+                 
+                 <List
+                 num="•"
+                 item="Departmental Handbook"
+                 desc="₦2,500"
+                 />
+             </div>
+             
+             <p className="my-5 w90 text-black/70 text-center">Students are advised to comply strictly with the above, as<b> payment of these fees is required for successful clearance</b>.</p>
+             
+             </>
+         }
+         />
+    
+        <div className="my-5 w90 rounded-xl border border-black/10">
+         <Title
+         title={title}
+         date={date}
+         status={status}
+         />
+         
+         <p className="w90 my-3 text-sm text-black/60 text-center px-3">{desc}</p>
+         
+         <p onClick={() => {
+           setShowOverlay(true)  
+         }}
+          className="tblue text-sm my-3  font-medium mx-5">Read more...</p>
+         
+         
+        </div>
+    </>
+    )
+}

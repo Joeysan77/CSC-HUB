@@ -34,7 +34,7 @@ export function List({num, item, desc}) {
                <p className="font-semibold text-lg px-3">{num}</p>
             <p className="px-3 text-center font-medium my-1">{item}</p>
            </div> 
-            <p className="text-sm tgray text-center">{desc}</p>
+            <p className="text-sm tgray text-center ml-auto">{desc}</p>
         </div>
     )
 }

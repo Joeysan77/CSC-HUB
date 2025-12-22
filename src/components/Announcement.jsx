@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-import {PhysicalClearance, DepartmentalClearanceDeadline} from './AnnouncementsList'
+import {PhysicalClearance, DepartmentalClearanceDeadline, DepartmentalClearance} from './AnnouncementsList'
 
 
 export default function Announcement() {
@@ -18,6 +18,7 @@ export default function Announcement() {
                 <div className="tblue h-5 w-4 blue-sm flex center rounded py-1.5 px-1.5"><span className="">2</span></div>
                 </div>
             <DepartmentalClearanceDeadline/>
+            <DepartmentalClearance/>
             <PhysicalClearance/>
             
         </div>
