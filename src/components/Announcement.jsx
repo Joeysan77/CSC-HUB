@@ -15,7 +15,7 @@ export default function Announcement() {
                     <i className="fal fa-exclamation-circle text-lg "></i><p>announcements</p>
                 </div>
                 
-                <div className="tblue h-5 w-4 blue-sm flex center rounded py-1.5 px-1.5"><span className="">2</span></div>
+                <div className="tblue h-5 w-4 blue-sm flex center rounded py-1.5 px-1.5"><span className="">3</span></div>
                 </div>
             <DepartmentalClearanceDeadline/>
             <DepartmentalClearance/>
