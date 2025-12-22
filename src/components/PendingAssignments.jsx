@@ -1,4 +1,5 @@
 import Assignment from './Assignment'
+import {List} from './Utilities'
 
 export default function PendingAssignments() {
     return (
@@ -9,7 +10,7 @@ export default function PendingAssignments() {
                     <p>pending assignments</p>
                 </div>
                 <div className="flex rounded center px-1 text-sm orange-sm torange">
-                    <p>7</p>
+                    <p>9</p>
                 </div>
             </div>
             
@@ -100,6 +101,69 @@ dimension of K</p>
             
             
             </div>}
+            completed={false}
+            due="null"
+            />
+            
+            
+              <Assignment
+            subject="STA 111"
+            date="15/12/2025"
+            content={
+            <>
+            <p className="w80 tgray text-center my-5">Explain the following:</p>
+            <div>
+                <List
+                num="i"
+                item="Simple Bar Chart"
+                />
+                
+                <List
+                num="ii"
+                item="Component Bar Chart"
+                />
+                
+                <List
+                num="ii"
+                item="Multiple Bar Chart"
+                />
+                
+                <List
+                num="iv"
+                item="Histogram"
+                />
+                
+                <List
+                num="v"
+                item="Pie Chart"
+                />
+                
+                <List
+                num="vi"
+                item="Cumulative Frequency Chart"
+                />
+                
+                <List
+                num="vii"
+                item="O-give"
+                />
+                
+                <p className="w80 tgray text-center my-5">Using self formulated data to illustrate all, <b>to be done on a 20 leaves exercise book</b></p>
+                
+                
+            </div>
+            </>
+            }
+            completed={false}
+            due="null"
+            />
+            
+            
+            
+            <Assignment
+            subject="IGB 101"
+            date="15/12/2025"
+            content={<p className="w80 tgray text-center my-5">Pages 1 - 5 of your Igbo Workbook <br/><br/><b>more assignments may be added</b></p>}
             completed={false}
             due="null"
             />

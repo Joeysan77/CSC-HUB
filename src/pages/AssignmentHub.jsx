@@ -57,13 +57,18 @@ export default function AssignmentHub() {
                     />
                     
                     <Course
+                    text="STA 111"
+                    pending ={1}
+                    />
+                    
+                    <Course
                     text="FRN 101"
                     pending={0}
                     />
                     
                     <Course
                     text="IGB 101"
-                    pending={0}
+                    pending={1}
                     />
                     
                 </div>
