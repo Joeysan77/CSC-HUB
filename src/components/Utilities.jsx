@@ -30,11 +30,13 @@ export function Title({title, date, status}) {
 export function List({num, item, desc}) {
     return (
         <div className="my-3 w90 rounded-xl border border-black/10 p-3">
-           <div className="flex v-center w-full">
-               <p className="font-semibold text-lg px-3">{num}</p>
-            <p className="px-3 text-center font-medium my-1">{item}</p>
-           </div> 
-            <p className="text-sm tgray text-center ml-auto">{desc}</p>
+          <div className="flex between px-3 v-center">
+              <p className="w-[15%] text-lg font-semibold">{num}</p>
+              <div className="flex flex-col center w-[85%] gap-y-2">
+                  <p className="font-medium">{item}</p>
+                  <p className="text-sm tgray">{desc}</p>
+              </div>
+          </div>
         </div>
     )
 }

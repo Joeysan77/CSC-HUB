@@ -16,7 +16,7 @@ export default function Menu({show, onClose}) {
     }
 
     return (
-        <div className={` w-[60%] top-0 right-0 fixed bg-white rounded-l-xl h-full z-[21] ${show ? '' : 'hide translate-x-10'}`}>
+        <div className={` w-[60%] top-0 right-0 fixed bg-white/70 rounded-l-xl h-full z-[21] ${show ? '' : 'hide translate-x-10'}`}>
             <p className="text-xl text-center font-medium my-5">Menu</p>
             
             <div className="w80 my-10">
