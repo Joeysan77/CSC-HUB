@@ -15,7 +15,7 @@ export default function Dark({zIndex, onClick, show}) {
   }, [show]);
 
     return (
-        <div onClick={onClick} className={`${zIndex} w-full fixed h-full backdrop-blur-lg top-0 bg-black/50 ${show ? '' : 'hide'} `}>
+        <div onClick={onClick} className={`${zIndex} w-full fixed h-full backdrop-blur-lg left-0 top-0 bg-black/50 ${show ? '' : 'hide'} `}>
             
         </div>
     )

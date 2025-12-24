@@ -1,5 +1,30 @@
+import {useState} from 'react'
+import DemoContainer from './DemoContainer'
+import Dark from './Dark'
+
+
 export default function Assignment({subject, content, date, completed, due}) {
+
+    const [showContainer, setShowContainer] = useState(false)
+
     return (
+    <>
+    
+        <Dark
+        show={showContainer}
+        zIndex="z-[15]"
+        onClick={() => {
+            setShowContainer(false)
+        }}
+        />
+        <DemoContainer
+        show={showContainer}
+        subject={subject}
+        date={date}
+        content={content}
+        />
+         
+    
         <div className="border-b-[.5px] bgray w90 py-30 md:!w-[60%] md:!ml-[20%]">
             <div className="flex between px-3 v-center">
                 <p className="tblue text-lg font-semibold">{subject}</p>
@@ -15,7 +40,12 @@ export default function Assignment({subject, content, date, completed, due}) {
                     <p className="">{due}</p>
                 </div>
             </div>
-            <button className="w90 font-medium text-center blue rounded-lg py-1">View Demo</button>
+            <button 
+             onClick={() => {
+                 setShowContainer(true)
+             }}
+             className="w90 font-medium text-center blue rounded-lg py-1">View Demo</button>
         </div>
+    </>
     )
 }

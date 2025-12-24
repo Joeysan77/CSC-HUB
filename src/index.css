@@ -1,4 +1,4 @@
-@import 'tailwindcss'
+@import 'tailwindcss';
 @import '../styles/fonts/Inter/index.css';
 @import '../styles/fonts/Roboto/index.css';
 @import '../styles/fonts/Poppins/index.css';
@@ -15,4 +15,26 @@ body {
 
 li {
     display: list-item;
+}
+
+/* Hide the 'x' button for Webkit browsers (Chrome, Safari, Edge) */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+/* Hide the 'x' button for Internet Explorer/Edge (legacy) */
+input[type="search"]::-ms-clear,
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Ensure the appearance utility works correctly for Firefox */
+input[type="search"] {
+  appearance: none;
+  -moz-appearance: none;
 }
