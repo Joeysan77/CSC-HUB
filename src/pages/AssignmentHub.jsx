@@ -1,7 +1,7 @@
 import PendingAssignments from '../components/PendingAssignments'
 import DueAssignments from '../components/DueAssignments'
 import SubmittedAssignment from '../components/SubmittedAssignment'
-
+import Courses from '../components/Courses'
 
 export default function AssignmentHub() {
     return (
@@ -23,7 +23,8 @@ export default function AssignmentHub() {
                         <i className="far fa-filter-list text-lg"></i> <p>Filter by Course Code</p>
                     </button>
                 </div>
-                
+                <Courses/>
+                    {/*
                 <div className="flex flex-wrap gap-x-5 gap-y-4 my-3 around w90">
  
                     <Course
@@ -71,7 +72,7 @@ export default function AssignmentHub() {
                     pending={1}
                     />
                     
-                </div>
+                </div>*/}
             </div>
             
             <div className="line my-10 w80"></div>

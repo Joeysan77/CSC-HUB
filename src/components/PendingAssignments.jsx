@@ -1,17 +1,17 @@
 import {useState, useRef} from 'react'
 import Assignment from './Assignment'
 import {List} from './Utilities'
-import {assignments} from './data'
+import {pendingAssignments} from './data'
 
 export default function PendingAssignments() {
 
     let asLength;
-    asLength = assignments.length;
+    asLength = pendingAssignments.length;
 
     const [query, setQuery] = useState('')
     const inputRef= useRef(null)
     
-    const filteredAssignments = assignments.filter(assignment =>
+    const filteredAssignments = pendingAssignments.filter(assignment =>
     `${assignment.subject} ${assignment.date} ${assignment.due} ${assignment.contentText}`
     .toLowerCase()
     .includes(query.toLowerCase())
@@ -47,6 +47,7 @@ export default function PendingAssignments() {
                             date = {assignment.date}
                             due = {assignment.due}
                             content = {assignment.content} 
+                            completed = {assignment.completed}
                             />
                         )
                     })}

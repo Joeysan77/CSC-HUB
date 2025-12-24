@@ -27,7 +27,7 @@ export default function AnnouncementOverlay({show, title, date, onClose, content
         <>
           <Dark
           show={show}
-          zIndex="z-[16] left-0"
+          zIndex="z-[19] left-0"
           onClick={onClose}
           />
             

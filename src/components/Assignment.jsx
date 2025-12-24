@@ -3,7 +3,7 @@ import DemoContainer from './DemoContainer'
 import Dark from './Dark'
 
 
-export default function Assignment({subject, content, date, completed, due}) {
+export default function Assignment({subject, content, date, completed, due, dueDate}) {
 
     const [showContainer, setShowContainer] = useState(false)
 
@@ -37,7 +37,7 @@ export default function Assignment({subject, content, date, completed, due}) {
                 <p className={` ${completed ? 'green-sm tgreen' : 'orange-sm torange'} px-2 py-1 font-medium rounded`}>{completed ? 'submitted' : 'pending'}</p>
                 <div className="flex gap-2">
                     <p className="tpri font-medium">Due Date :</p>
-                    <p className="">{due}</p>
+                    <p className="">{due === null ? 'null' : `${dueDate}`}</p>
                 </div>
             </div>
             <button 
