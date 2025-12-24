@@ -8,7 +8,7 @@ export const assignments = [
     date: "15/12/2025",
     due: null,
     dueDate: '',
-    completed: true,
+    completed: false,
     content: (
       <p className="w80 tgray text-center my-5">
         In the middle of your textbook, after page 130.
