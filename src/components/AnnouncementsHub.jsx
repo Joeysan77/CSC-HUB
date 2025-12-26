@@ -92,8 +92,8 @@ export default function AnnouncementsHub() {
 function Count({count, type, icon }) {
     return (
         <div className={`${count.length > 0 ? type : 'tgray gray-sm'} flex center gap-3 rounded py-1 px-2`}>
-            <i className={` far ${icon} text-lg  `}></i>
-            <p className="text-lg font-medium">{count.length}</p>
+            <i className={` far ${icon}   `}></i>
+            <p className="text-sm font-medium">{count.length}</p>
         </div>
     )
 }
