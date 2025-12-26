@@ -31,7 +31,7 @@ export default function AnnouncementOverlay({show, title, date, onClose, content
           onClick={onClose}
           />
             
-          <div className={`${show ? '' : 'hide scale-90' } fixed left-0 w90 max-h-[75vh] overflow-y-auto rounded-xl bg-white/80 top-20 w90 z-[17] shadow-lg `}>
+          <div className={`${show ? '' : 'hide scale-90' } fixed left-0 w90 max-h-[75vh] overflow-y-auto rounded-xl bg-white/80 top-20 w90 z-[20] shadow-lg `}>
               
                 <div className={` ${sta} rounded-t-lg border-t-4`}>
               

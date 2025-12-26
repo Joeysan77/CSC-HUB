@@ -38,3 +38,9 @@ input[type="search"] {
   appearance: none;
   -moz-appearance: none;
 }
+
+.disappear {
+    background: linear-gradient(to bottom, rgba(0,0,0,0), rgb(255,255,255));
+    box-sizing: content-box;
+    
+}

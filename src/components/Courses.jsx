@@ -1,4 +1,4 @@
-import { mth101, chm101, gst111, phy101, cos101, gst211, sta111, frn101, igb101 } from './data';
+import { mth101, chm101, gst111, phy101, cos101, gst211, sta111, frn101, igb101 } from './assignmentdata';
 import Course from './Course'
 
 export default function Courses() {

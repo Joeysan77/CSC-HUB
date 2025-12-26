@@ -1,6 +1,6 @@
 import {useState, useRef} from 'react'
 import Assignment from './Assignment'
-import {submittedAssignments} from './data'
+import {submittedAssignments} from './assignmentdata'
 
 export default function SubmittedAssignments() {
 

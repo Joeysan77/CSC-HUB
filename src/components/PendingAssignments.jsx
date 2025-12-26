@@ -1,7 +1,7 @@
 import {useState, useRef} from 'react'
 import Assignment from './Assignment'
 import {List} from './Utilities'
-import {pendingAssignments} from './data'
+import {pendingAssignments} from './assignmentdata'
 
 export default function PendingAssignments() {
 

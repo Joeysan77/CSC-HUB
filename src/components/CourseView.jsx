@@ -104,16 +104,12 @@ export default function CourseView({ show, course, cors, onClose }) {
 }
 
 function Button({ text, count, type, active, onClick }) {
-  let typeCol;
-  if (type === 'pending') typeCol = 'borange torange orange-sm';
-  if (type === 'submitted') typeCol = 'bgreen2 tgreen2 green-sm';
-  if (type === 'due') typeCol = 'bred tred red-sm';
-
+ 
   return (
     <div
       onClick={onClick}
       className={`${
-        active ? `${typeCol} font-medium` : 'bgray'
+        active ? `bblue tblue blue-xs font-medium` : 'bgray'
       } flex rounded border py-1 px-2 gap-2 text-sm mr-6 relative cursor-pointer`}
     >
       {active ? (
