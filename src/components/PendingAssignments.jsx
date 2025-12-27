@@ -2,6 +2,7 @@ import {useState, useRef} from 'react'
 import Assignment from './Assignment'
 import {List} from './Utilities'
 import {pendingAssignments} from './assignmentdata'
+import {AnimatePresence, motion } from 'framer-motion'
 
 export default function PendingAssignments() {
 
@@ -40,8 +41,11 @@ export default function PendingAssignments() {
                 </div>
                 
                 <div>
+                    
                     {filteredAssignments.map((assignment) => {
                         return (
+                    
+      
                             <Assignment 
                             subject = {assignment.subject}
                             date = {assignment.date}
@@ -49,8 +53,12 @@ export default function PendingAssignments() {
                             content = {assignment.content} 
                             completed = {assignment.completed}
                             />
+                               
+                       
                         )
                     })}
+                    
+                     
                 </div>
                 
                 {filteredAssignments.length === 0 ? 

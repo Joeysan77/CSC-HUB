@@ -39,7 +39,7 @@ export default function Menu({show, onClose}) {
                 
                 
                 <Button
-                icon="fa-speaker"
+                icon="fa-megaphone"
                 text="Annoucements"
                 active={active === 'announcements'}
                 to="/announcements"

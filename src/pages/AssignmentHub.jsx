@@ -2,6 +2,7 @@ import PendingAssignments from '../components/PendingAssignments'
 import DueAssignments from '../components/DueAssignments'
 import SubmittedAssignment from '../components/SubmittedAssignment'
 import Courses from '../components/Courses'
+import SearchAssignments from '../components/SearchAssignments'
 
 export default function AssignmentHub() {
     return (
@@ -12,10 +13,7 @@ export default function AssignmentHub() {
                   <p className="tgray-lg my-3 text-sm w60 text-center">View, track, and review all assignments</p>
             </div>
           
-            <div className="flex v-center border border-black/50 hbblue w80 rounded-lg between mt-15 mb-10">
-                <input className="px-5 py-1.5 outline-none "type="search" name="" id="" placeholder="Search Assignments..."/>
-                <i className="fal fa-search px-2 py-1"></i>
-            </div>
+            <SearchAssignments/>
             
             <div>
                 <div className="my-5">
