@@ -45,9 +45,11 @@ export default function CourseView({ show, course, cors, onClose }) {
           {cors.length}
         </p>
       </div>
-
+    
+    <div className="shadow ">
+    
       {/* Search */}
-      <div className="border rounded border-black/20 w90 between flex mt-5 px-3 py-1">
+      <div className="border rounded-lg border-black/20 w90 between flex mt-5 px-3 py-1">
         <input
           className="outline-none w-full"
           type="search"
@@ -55,11 +57,11 @@ export default function CourseView({ show, course, cors, onClose }) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
-        <i className="fal fa-search text-lg px-2"></i>
+        <i className="fal fa-search text-lg "></i>
       </div>
 
       {/* Filter Buttons */}
-      <div className="flex px-3 my-4 mb-8 gap-3 w90">
+      <div className="flex px-3 my-4 mb-8 gap-3 w90 pb-3 ">
         <Button
           text="Pending"
           count={cors.filter((c) => !c.completed && !c.due).length}
@@ -81,6 +83,7 @@ export default function CourseView({ show, course, cors, onClose }) {
           active={filters.due}
           onClick={() => toggleFilter('due')}
         />
+      </div>
       </div>
 
       {/* Assignment List */}
@@ -109,14 +112,9 @@ function Button({ text, count, type, active, onClick }) {
     <div
       onClick={onClick}
       className={`${
-        active ? `bblue tblue blue-xs font-medium` : 'bgray'
-      } flex rounded border py-1 px-2 gap-2 text-sm mr-6 relative cursor-pointer`}
+        active ? ` blue font-medium` : 'bgray tgray'
+      } flex rounded-full font-medium border py-1.5 px-4 gap-2 bblue text-sm relative cursor-pointer`}
     >
-      {active ? (
-        <i className="tred fal fa-xmark absolute top-0 -right-5 px-1 py-1 rounded-full "></i>
-      ) : (
-        ''
-      )}
       <p>{text}</p>
       <p>{count}</p>
     </div>

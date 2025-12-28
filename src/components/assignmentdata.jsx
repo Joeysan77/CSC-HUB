@@ -4,9 +4,11 @@ export const assignments = [
 {
 index: 0,
 subject: "CHM 101",
+title: "Textbook Questions on Chapter 1",
 date: "15/12/2025",
-due: null,
+due: false ,
 dueDate: '',
+subDate:'',
 completed: false,
 content: (
 <p className="w80 tgray text-center my-5">
@@ -20,10 +22,12 @@ contentText:
 {
 index: 1,
 subject: "COS 101",
+title: "Exercise 3: Manual Tasks",
 date: "15/12/2025",
-due: null,
+due: false ,
 dueDate: '',
 completed: false,
+subDate:'',
 content: (
 <p className="w80 tgray text-center my-5">
 Page 23, Exercise 3 of the COS 101 manual. Perform the tasks and staple it to the back of your manual for submission.
@@ -35,9 +39,11 @@ contentText:
 {
 index: 2,
 subject: "COS 101",
+title: "Pages 1-12 Exercises",
 date: "15/12/2025",
-due: null,
+due: false ,
 dueDate: '',
+subDate:'',
 completed: false,
 content: (
 <p className="w80 tgray text-center my-5">
@@ -49,9 +55,11 @@ contentText: "Answer page 1-12 on your COS 101 manuals."
 {
 index: 3,
 subject: "GST 111",
+title: "Human Speech Organs Drawing",
 date: "15/12/2025",
-due: null,
+due: false ,
 dueDate: '',
+subDate:'',
 completed: false,
 content: (
 <p className="w80 tgray text-center my-5">
@@ -64,9 +72,11 @@ contentText:
 {
 index: 4,
 subject: "GST 111",
+title: "Essay: Academic Holiday Activities",
 date: "15/12/2025",
-due: null,
+due: false ,
 dueDate: '',
+subDate:'',
 completed: false,
 content: (
 <p className="w80 tgray text-center my-5">
@@ -79,9 +89,11 @@ contentText:
 {
 index: 5,
 subject: "MTH 101",
+title: "Example 10.11 Exercises",
 date: "15/12/2025",
-due: null,
+due: false ,
 dueDate: '',
+subDate:'',
 completed: false,
 content: (
 <p className="w80 tgray text-center my-5">
@@ -94,10 +106,12 @@ contentText:
 {
 index: 6,
 subject: "PHY 101",
+title: "Physics Problems: Gravitation and Waves",
 date: "15/12/2025",
-due: null,
+due: false ,
+subDate:'',
 dueDate: '',
-completed: false,
+completed: true,
 content: (
 <div>
         <p className="w80 tgray text-center my-5">
@@ -142,10 +156,12 @@ contentText:
 {
 index: 7,
 subject: "STA 111",
+title: "Statistical Charts Explanation",
 date: "15/12/2025",
-due: null,
+due: false,
+subDate:'08/02/2026',
 dueDate: '',
-completed: false,
+completed: true,
 content: (
 <>
 <p className="w80 tgray text-center my-5">Explain the following charts.</p>
@@ -167,10 +183,12 @@ contentText:
 {
 index: 8,
 subject: "IGB 101",
+title: "Igbo Workbook Pages 1-5",
 date: "15/12/2025",
-due: null,
-dueDate: '',
+due: true,
+dueDate: '05/01/2026',
 completed: false,
+subDate:'',
 content: (
 <p className="w80 tgray text-center my-5">
 Pages 1 - 5 of your Igbo Workbook. More assignments may be added.
@@ -182,7 +200,7 @@ contentText:
 ];
 
 export const submittedAssignments = assignments.filter(
-assignment => assignment.completed === true && assignment.due === null
+assignment => assignment.completed === true && assignment.due === false 
 );
 
 export const dueAssignments = assignments.filter(
@@ -190,7 +208,7 @@ assignment => assignment.due === true && assignment.completed == false
 );
 
 export const pendingAssignments = assignments.filter(
-assignment => assignment.completed === false && assignment.due === null
+assignment => assignment.completed === false && assignment.due === false 
 );
 
 export const mth101 = assignments.filter(a => a.subject === "MTH 101");

@@ -3,19 +3,19 @@ import {Count, Search, NoData} from './Utilities'
 import {assignments, pendingAssignments, submittedAssignments, dueAssignments} from './assignmentdata'
 import Assignment from './Assignment'
 
-export default function PendingAssignments() {
+export default function SubmittedAssignments() {
 
     const [query, setQuery] = useState('')
 
     const counts = [
         {
-            icon: 'fa-calendar',
-            count: pendingAssignments.length,
-            type:'orange-sm torange'
+            icon: 'fa-calendar-check',
+            count: submittedAssignments.length,
+            type: 'green-sm tgreen2'
         }
     ]
     
-    const filteredAssignments = pendingAssignments.filter(assignment =>
+    const filteredAssignments = submittedAssignments.filter(assignment =>
   `${assignment.subject} ${assignment.date} ${assignment.contentText}`
     .toLowerCase()
     .includes(query.toLowerCase())
@@ -24,7 +24,7 @@ export default function PendingAssignments() {
     return (
         <div>
             <div className="flex w90 between my-10">
-                <p className="font-medium text-lg text-black/70">Pending Assignments</p>
+                <p className="font-medium text-lg text-black/70">Submitted Assignments</p>
                 <div className="flex gap-3">
                     {counts.map((c) => {
                         return (
@@ -44,7 +44,7 @@ export default function PendingAssignments() {
                 
                 
                 <Search
-                   placeHolder='Search Pending Assignments'
+                   placeHolder='Search Submitted Assignments'
                    div='mt-8'
                    onChange={e => setQuery(e.target.value)}
            
@@ -72,7 +72,6 @@ export default function PendingAssignments() {
            <NoData
            data={filteredAssignments.length === 0}
            />
-           
             
         </div>
     )

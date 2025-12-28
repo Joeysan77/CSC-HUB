@@ -1,51 +1,100 @@
 import {useState} from 'react'
-import DemoContainer from './DemoContainer'
-import Dark from './Dark'
+import AssignmentView from './AssignmentView'
+import AnimatedContent from './animations/AnimatedContent'
 
+export default function Assignment({subject, date, title, desc, due, dueDate, completed, subDate, content}) {
 
-export default function Assignment({subject, content, date, completed, due, dueDate}) {
+    const [showView, setShowView] = useState(false)
+    
 
-    const [showContainer, setShowContainer] = useState(false)
+    let staCol;
+    let icon;
+    let dueText;
+    let dueCheck;
+    let dueDater;
+    
+    if (!completed && due ) {
+        staCol = 'tred red-sm bred'
+        icon='fa-calendar-exclamation'
+        dueText = 'Due'
+        dueCheck=dueDate
+        dueDater='due:'
+    } else if (!completed && !due) {
+        staCol = 'torange orange-sm borange'
+        icon="fa-calendar"
+        dueText='Pending'
+        dueCheck ="null"
+        dueDater='due:'
+    } else if (completed && !due) {
+        staCol= 'tgreen2 green-sm bgreen2'
+        icon="fa-calendar-check"
+        dueText="Submitted"
+        dueCheck=subDate
+        dueDater='submitted:'
+    } else {
+        staCol=`red`
+        icon="fa-home"
+        dueText='wut'
+        dueCheck='wut'
+    }
 
     return (
-    <>
+    <>  
     
-        <Dark
-        show={showContainer}
-        zIndex="z-[15]"
-        onClick={() => {
-            setShowContainer(false)
-        }}
-        />
-        <DemoContainer
-        show={showContainer}
+        <AssignmentView
+        show={showView}
         subject={subject}
         date={date}
+        title={title}
+        dueText={dueText}
+        dueCheck={dueCheck}
+        icon={icon}
         content={content}
+        staCol={staCol}
+        onClose={() => {
+            setShowView(false)
+        }}
         />
-         
-    
-        <div className="border-b-[.5px] bgray w90 py-30 md:!w-[60%] md:!ml-[20%]">
-            <div className="flex between px-3 v-center">
-                <p className="tblue text-lg font-semibold">{subject}</p>
-                <p className="tgray text-sm ">{date}</p>
+
+        <div className="bg-white shadow w90 rounded-xl my-8 pb-3 border-black/10 border relative">
+            <div className="flex between border-black/10 border-b w90 py-1.5 v-center ">
+                <p className="text-black/70 font-semibold">{subject}</p>
+                <p className="text-sm tgray">{date}</p>
             </div>
-            
-            <p>{content}</p>
-            
-            <div className="flex between text-xs px-3 my-5 v-center">
-                <p className={` ${completed ? 'green-sm tgreen' : 'orange-sm torange'} px-2 py-1 font-medium rounded`}>{completed ? 'submitted' : 'pending'}</p>
-                <div className="flex gap-2">
-                    <p className="tpri font-medium">Due Date :</p>
-                    <p className="">{due === null ? 'null' : `${dueDate}`}</p>
+            <div className="flex w90 v-center between py-5 gap-5 border-b border-black/10">
+                <div>
+                    <p className="font-medium my-2">{title}</p>
+                    <p className="text-sm tgray">{desc}</p>
+                </div>
+                <div className="flex text-xs gap-1 v-center text-black/70">
+                    <div className="flex gap-2 v-center">
+                        <i className={`${staCol} ${icon} far  text-base px-1 rounded`}></i>
+                        <p>{dueDater.slice(0, 4)}</p>
+                    </div>
+                    <p>{dueCheck}</p>
                 </div>
             </div>
-            <button 
-             onClick={() => {
-                 setShowContainer(true)
-             }}
-             className="w90 font-medium text-center blue rounded-lg py-1">View Demo</button>
+            
+            <div className="flex w90 mt-3 between">
+                <div className={`${staCol} text-sm px-2 py-1 rounded-lg flex v-center gap-3`}>
+                    <i className={`far ${icon} text-lg `}></i>
+                    <p className="font-medium">{dueText}</p>
+                    
+                </div>
+                
+                <div
+                onClick={() => {
+                    setShowView(true)
+                }}
+                 className="blue px-3 py-1.5 center gap-3 flex rounded-lg font-medium shadow text-sm relative">
+                    <p>View</p>
+                    
+                    <i className="fas fa-chevron-right text-sm"></i>
+                </div>
+            </div>
+            
         </div>
+      
     </>
     )
 }

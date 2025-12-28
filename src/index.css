@@ -7,6 +7,7 @@ body {
     font-family:'Poppins';
     padding-top: 100px;
     padding-bottom: 150px;
+    background: rgb(253,251,253);
 }
 * {
     transition: 0.25s !important;
@@ -43,4 +44,11 @@ input[type="search"] {
     background: linear-gradient(to bottom, rgba(0,0,0,0), rgb(255,255,255));
     box-sizing: content-box;
     
+}
+
+.centerDiv {
+    @apply top-1/2 left-1/2 transform -translate-x-1/2  overflow-y-auto -translate-y-1/2
+}
+.wter {
+    background: rgb(242,242,248);
 }

@@ -60,7 +60,7 @@ export default function Header() {
                 setShowDark(true)
                 setShowMenu(true)
             }} 
-            className="border px-2 rounded bpri ablue-sm">
+            className="wpri px-3 py-1 rounded ablue-sm">
                 <i className="fal fa-bars text-lg tpri"></i>
             </div>
             

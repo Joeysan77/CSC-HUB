@@ -17,7 +17,7 @@ export default function Announcements({status, title, date, desc, show, onClick,
     
     
         
-        <div onClick={onClick} className="border w90 border-black/10 rounded-lg my-5 ">
+        <div onClick={onClick} className="border w90 border-black/10 rounded-xl my-5 ">
             <div className="py-5 px-5 border-b border-black/10">
                 <span className={` ${staCol} py-1 px-2 border-2 rounded-full uppercase text-sm`}>{status}</span>
                 

@@ -41,3 +41,44 @@ export function List({num, item, desc}) {
     )
 }
 
+export function Filter({className, text, count, active, onClick}) {
+    return (
+        <div onClick={onClick} className={`${className} flex flex-1 v-center px-5 text-sm border-r-[.5px]  border-r-black/10 py-1 px-5 ${active ? 'tblue blue-xs font-medium border-b-2 ' : 'text-black/70'}`}>
+            <p>{text}</p>
+            
+        </div>
+    )
+}
+
+export function Count({icon, count, type }) {
+    return (
+        <div className={`${count > 0 ? type : 'tgray gray-sm'} flex   rounded center gap-3 px-2 py-1`}>
+            <i className={`${icon} far `}></i>
+            <p className="text-sm font-medium">{count}</p>
+        </div>
+    )
+}
+
+export function Search({ref, placeHolder, div, onChange}) {
+    return (
+         <div className={`w90 !md:w-[60%] md:ml-[20%] border border-black/10 shadow rounded-lg flex bg-white v-center px-2 my-3 py-1 ${div} hbblue-lg`} >
+                <i className="far fa-search tgray"></i>
+                <input onChange={onChange} ref={ref} className="py-1 px-2 text-sm outline-none w-full" type="search" name="" id="" placeholder={placeHolder}/>
+            </div>
+    )
+}
+
+export function NoData({data}) {
+    return (
+    <>
+        {data ? (
+            <div className={`w90 bg-white border border-black/10 shadow py-8 flex center rounded-xl`}>
+                <p className="text-sm text-center tgray">
+                    no data/assignments matches this query
+                </p>
+            
+        </div>
+        ) : ''}
+     </>
+    )
+}

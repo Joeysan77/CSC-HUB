@@ -14,7 +14,7 @@ export default function AssignmentCard() {
             <p className="mt-5 tgray-lg text-center text-sm w80">
             View all pending and submitted assignments, check deadlines, and access provided answers in one place.
             </p>
-           <Link to="/assignment_hub" className="w90 mt-8 blue py-2 font-medium flex center gap-5 rounded-lg">
+           <Link to="/assignment_hub" className="w90 mt-8 bblue border tblue py-2 font-medium flex center gap-5 rounded-full">
                <p>View Assignments</p>
                <i className="fal fa-arrow-right"></i>
            </Link>
