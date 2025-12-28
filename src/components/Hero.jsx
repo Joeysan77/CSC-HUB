@@ -13,7 +13,7 @@ export default function Hero() {
                 Check assignments, view announcements, and stay updated on events—all in one place.
             </p>
             
-            <Link to="assignment_hub" className="flex blue rounded-full my-8 py-2 w80 center gap-5"><p className=" font-medium">View Assignments</p><i className="far fa-arrow-right text-lg"></i></Link>
+            <Link to="assignment_hub" className="flex pri rounded-full my-8 py-2 w80 center gap-5"><p className=" font-medium">View Assignments</p><i className="far fa-arrow-right text-lg"></i></Link>
             </div>
             
            <div className="line mt-20 mb-10 w90"></div>
