@@ -1,19 +1,35 @@
+import {useState} from 'react'
 import Announcement from '../components/Announcement'
 import AnnouncementsHub from '../components/AnnouncementsHub'
+import {Link} from 'react-router-dom' 
 
 export default function Announcements() {
+
+    const [shake, setShake] = useState(false)
+    
+
     return (
-        <>
-        <div className="">
-            <p className="text-2xl text-center tblue  font-medium">Announcements</p>
+        <div>
+            <div className="flex between px-3 -mt-8">
+                <div className="flex gap-3 mx-3">
+                    <p className="text-xl font-medium">Announcements Hub</p>
+                </div>
+                <div>
+                <i
+                
+                onClick={() => {
+                    setShake(true)
+                    setTimeout(() => {
+                        setShake(false)
+                    } , 2009)
+                }}
+                
+                 className={`${shake ? 'tblue scale-120 pointer-events-none fa-shake' : 'tgray'} fa-solid  fa-bell text-xl px-3`}></i>
+                </div>
+            </div>
             
-            <p className="tgray text-center my-3">Stay updated with the latest departmental announcements, deadlines, and notices.</p>
+            <AnnouncementsHub/>
+            
         </div>
-        
-        <div className="line10 w90"></div>
-        
-        <AnnouncementsHub/>
-        
-        </>
     )
 }

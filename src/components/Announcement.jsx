@@ -1,30 +1,74 @@
-import {Link} from 'react-router-dom'
-import AnnouncementsList from './AnnouncementsList'
-import {data} from './announcementdata'
+import {useState, useEffect} from 'react'
+import AnnouncementView from './AnnouncementView'
 
 
-export default function Announcement() {
+export default function Announcement({type, title, desc, date, content}) {
+
+    const [showView, setShowView] = useState(false)
+    const [animate, setAnimate] = useState('opacity-0 translate-y-3 ')
+    useEffect(() => {
+        setAnimate('')
+    }, [])
+    
     return (
-    <div>
-        <Link to="/announcements" className="flex between text-sm w90 tpri-lg ">
-            <p>Announcements Page</p>
-            <i className="fal fa-arrow-right text-lg"></i>
-        </Link>
-        <div className="mt-5 border rounded-xl border-black/20 w90 ">
-            <div className="flex tpri-lg wfull between px-3 v-center border-b border-black/20 py-1">
-                <div className="flex gap-2 v-center">
-                    <i className="fal fa-exclamation-circle text-lg "></i><p>announcements</p>
-                </div>
-                
-                <div className="tblue h-5 w-4 blue-sm flex center rounded py-1.5 px-1.5"><span className="">{data.length}</span></div>
-                </div>
+    <>
+        <AnnouncementView
+        show={showView}
+        title={title}
+        type={type}
+        date={date}
+        content={content}
+        onClose={() => {
+            setShowView(false)
+        }}
+        />
+    
+        <div
+        onClick={() => {
+            setShowView(true)
+        }}
+         className={`bg-white w90 shadow border border-black/10 rounded-xl py-3 my-8 ${animate}`}>
+            <div className="flex w90 ">
+                <Type
+                type={type}
+                />
+            </div>
             
-            <AnnouncementsList/>
+            <div className="my-3 border-b border-black/10 py-1">
+                <p className="w90 font-medium my-3">{title}</p>
+                <p className="w90 font-medium tgray text-sm">{date}</p>
+            </div>
+            
+            
+            <p className="tgray text-sm w90">{desc.slice(0, 55)}...</p>
+            
+            
             
         </div>
-       <div className="line my-15 w90">
-           
-       </div>
-    </div>
+     </>
+    )
+}
+
+function Type({type}) {
+
+   let ty;
+   let icon;
+
+    if (type === 'urgent') {
+        ty = 'red-sm tred'
+        icon='fa-exclamation-triangle'
+    } else if (type === 'important') {
+        ty = 'orange-sm torange'
+        icon='fa-bell-exclamation'
+    } else if (type === 'notice') {
+        ty = 'blue-sm tblue'
+        icon='fa-info-circle'
+    }
+
+    return (
+        <div className={`${ty} flex gap-3 px-2 py-1 rounded-lg v-center`}>
+            <i className={`${icon} far `}></i>
+            <p className="capitalize font-medium text-sm">{type}</p>
+        </div>
     )
 }

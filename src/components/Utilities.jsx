@@ -59,11 +59,11 @@ export function Count({icon, count, type }) {
     )
 }
 
-export function Search({ref, placeHolder, div, onChange}) {
+export function Search({value, ref, placeHolder, div, onChange, onFocus, onBlur}) {
     return (
          <div className={`w90 !md:w-[60%] md:ml-[20%] border border-black/10 shadow rounded-lg flex bg-white v-center px-2 my-3 py-1 ${div} hbblue-lg`} >
                 <i className="far fa-search tgray"></i>
-                <input onChange={onChange} ref={ref} className="py-1 px-2 text-sm outline-none w-full" type="search" name="" id="" placeholder={placeHolder}/>
+                <input value={value} onFocus={onFocus} onBlur={onBlur} onChange={onChange} ref={ref} className="py-1 px-2 text-sm outline-none w-full" type="search" name="" id="" placeholder={placeHolder}/>
             </div>
     )
 }

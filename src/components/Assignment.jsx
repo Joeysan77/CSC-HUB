@@ -1,11 +1,11 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import AssignmentView from './AssignmentView'
 import AnimatedContent from './animations/AnimatedContent'
 
 export default function Assignment({subject, date, title, desc, due, dueDate, completed, subDate, content}) {
 
     const [showView, setShowView] = useState(false)
-    
+    const [animate, setAnimate] = useState('opacity-0 translate-y-3')
 
     let staCol;
     let icon;
@@ -37,6 +37,15 @@ export default function Assignment({subject, date, title, desc, due, dueDate, co
         dueText='wut'
         dueCheck='wut'
     }
+    
+    
+    
+    
+    
+    
+    useEffect(() => {
+        setAnimate('')
+    });
 
     return (
     <>  
@@ -56,7 +65,7 @@ export default function Assignment({subject, date, title, desc, due, dueDate, co
         }}
         />
 
-        <div className="bg-white shadow w90 rounded-xl my-8 pb-3 border-black/10 border relative">
+        <div className={` ${animate} bg-white shadow w90 rounded-xl my-8 pb-3 border-black/10 border relative `}>
             <div className="flex between border-black/10 border-b w90 py-1.5 v-center ">
                 <p className="text-black/70 font-semibold">{subject}</p>
                 <p className="text-sm tgray">{date}</p>
@@ -69,7 +78,7 @@ export default function Assignment({subject, date, title, desc, due, dueDate, co
                 <div className="flex text-xs gap-1 v-center text-black/70">
                     <div className="flex gap-2 v-center">
                         <i className={`${staCol} ${icon} far  text-base px-1 rounded`}></i>
-                        <p>{dueDater.slice(0, 4)}</p>
+                        <p>{dueDater.slice(0, 3)}:</p>
                     </div>
                     <p>{dueCheck}</p>
                 </div>

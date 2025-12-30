@@ -10,7 +10,7 @@ body {
     background: rgb(253,251,253);
 }
 * {
-    transition: 0.25s !important;
+    transition: .3s !important;
     box-sizing: border-box !important;
 }
 

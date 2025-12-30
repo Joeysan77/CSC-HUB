@@ -32,7 +32,7 @@ export default function AssignmentView({show, subject, date, onClose, title, con
                     onClose()
                     setShowDemo(false)
                 }}
-                 className="far fa-xmark bg-black/10  px-3 py-1.5 rounded-full ml-auto"></i>
+                 className="far fa-xmark blue-sm px-3 py-1.5 rounded-full ml-auto"></i>
             </div>
              <p className="font-medium text-lg w90">{title}</p>
              <p className="tgray w90">{subject}</p>

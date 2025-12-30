@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import {Count, Search, NoData} from './Utilities'
 import {assignments, pendingAssignments, submittedAssignments, dueAssignments} from './assignmentdata'
 import Assignment from './Assignment'
@@ -6,6 +6,7 @@ import Assignment from './Assignment'
 export default function PendingAssignments() {
 
     const [query, setQuery] = useState('')
+    const [animate, setAnimate] = useState('opacity-0 translate-y-3')
 
     const counts = [
         {
@@ -15,6 +16,10 @@ export default function PendingAssignments() {
         }
     ]
     
+    useEffect(() => {
+        setAnimate('')
+    })
+    
     const filteredAssignments = pendingAssignments.filter(assignment =>
   `${assignment.subject} ${assignment.date} ${assignment.contentText}`
     .toLowerCase()
@@ -22,7 +27,7 @@ export default function PendingAssignments() {
 );
 
     return (
-        <div>
+        <div className={animate}>
             <div className="flex w90 between my-10">
                 <p className="font-medium text-lg text-black/70">Pending Assignments</p>
                 <div className="flex gap-3">
