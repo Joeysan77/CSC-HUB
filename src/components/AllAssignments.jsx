@@ -7,6 +7,7 @@ import {Asd} from './DataList'
 export default function AllAssignments() {
 
     const [query, setQuery] = useState('')
+    const [inputValue, setInputValue] = useState('')
     const [animate, setAnimate] = useState('opacity-0 translate-y-3')
     const [showDatalist, setShowDatalist] = useState(false)
 
@@ -33,6 +34,12 @@ export default function AllAssignments() {
     useEffect(() => {
         setAnimate('')
     }, [])
+    
+    useEffect(() => {
+        setTimeout(() => {
+            setQuery(inputValue)
+        }, 200)
+    }, [inputValue])
     
    
     
@@ -65,7 +72,7 @@ export default function AllAssignments() {
                 
                 <div className="relative">
                     
-                    <div className={`absolute bottom-0 mb-15 bg-[#f0f1f3] w90 rounded-xl shadow-xl border border-black/20 max-h-[30vh] overflow-y-auto ${showDatalist ? '' : 'opacity-0 pointer-events-none translate-y-3 '} ${animate}`}>
+                    <div className={`absolute bottom-0 mb-15 bg-[#f0f1f3] w90 rounded-xl shadow-xl border border-black/20 max-h-[40vh] overflow-y-auto ${showDatalist ? '' : 'opacity-0 pointer-events-none translate-y-3 '} ${animate}`}>
                         {filteredAssignments.map((a) => {
                             return (
                                 <Asd
@@ -80,7 +87,7 @@ export default function AllAssignments() {
                                  dueDate={a.dueDate}
                                  subDate={a.subDate}
                                  onClick={() => {
-                                     setQuery(a.title.toLowerCase())
+                                     setInputValue(a.title.toLowerCase())
                                  }}
                                 />
                             )
@@ -94,11 +101,14 @@ export default function AllAssignments() {
                        
                     </div>
                 
+                    
+                
                 <Search
                    placeHolder='Search All Assignments'
                    div='mt-8'
-                   onChange={e => setQuery(e.target.value)}
-                   value={query}
+                   onChange={(e) => setInputValue(e.target.value)}
+                   value={inputValue}
+                   div={showDatalist ? 'mt-30' : ''}
                    onFocus={() => {
                        setShowDatalist(true)
                    }}

@@ -1,13 +1,15 @@
 import Hero from '../components/Hero'
-import Announcement from '../components/Announcement'
-import AssignmentCard from '../components/AssignmentCard'
+import AnnouncementBoard from '../components/AnnouncementBoard'
+import AssignmentBoard from '../components/AssignmentBoard'
+
 
 export default function Home() {
     return (
         <div className="">
-           
             <Hero/>
-            <AssignmentCard/>
+            <AssignmentBoard />
+            <AnnouncementBoard/>
+         
         </div>
     )
 }

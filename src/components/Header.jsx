@@ -50,7 +50,7 @@ export default function Header() {
         <div className="w-full fixed shadow flex between py-1.5 v-center px-2 top-0 backdrop-blur-lg z-[10]">
             <div className="flex gap-3 v-center">
                 <Icon
-            size={logo ? 'w-25' : 'w-20'}
+            size={logo ? 'w-12' : 'w-10'}
             />
             <p className="text-lg font-medium tpri">{page}</p>
             </div>

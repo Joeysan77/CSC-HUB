@@ -7,7 +7,7 @@ body {
     font-family:'Poppins';
     padding-top: 100px;
     padding-bottom: 150px;
-    background: rgb(253,251,253);
+    background: rgb(248,251,255);
 }
 * {
     transition: .3s !important;

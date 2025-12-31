@@ -3,6 +3,7 @@ import Announcement from '../components/Announcement'
 import AnnouncementsHub from '../components/AnnouncementsHub'
 import {Link} from 'react-router-dom' 
 
+
 export default function Announcements() {
 
     const [shake, setShake] = useState(false)
@@ -24,7 +25,7 @@ export default function Announcements() {
                     } , 2009)
                 }}
                 
-                 className={`${shake ? 'tblue scale-120 pointer-events-none fa-shake' : 'tgray'} fa-solid  fa-bell text-xl px-3`}></i>
+                 className={`${shake ? 'tgold scale-120 pointer-events-none fa-shake' : 'tgray'} fa-solid  fa-bell text-xl px-3 `}></i>
                 </div>
             </div>
             
