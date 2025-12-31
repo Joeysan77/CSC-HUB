@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import {Link} from 'react-router-dom' 
+import {urgent, important, notice} from './announcementdata'
 
 export default function AnnouncementBoard() {
 
@@ -40,21 +41,21 @@ export default function AnnouncementBoard() {
                     
                     <Card
                     text="Urgent"
-                    count='2'
+                    count={urgent.length}
                     icon='fa-exclamation-triangle'
                     color="tred"
                     />
                     
                     <Card
                     text="Important"
-                    count='4'
+                    count={important.length}
                     icon='fa-bell-exclamation'
                     color='torange'
                     />
                     
                     <Card
                     text="Notice"
-                    count='1'
+                    count={notice.length}
                     icon='fa-info-circle'
                     color='tblue'
                     />
@@ -78,7 +79,7 @@ function Card({icon, text, count, color}) {
             
             <div  className="pb-2">
                 <p className="tgray text-sm text-center">{text}</p>
-                <p className="font-semibold mt-2 text-xl  text-center">{count}</p>
+                <p className={`${count > 0 ? '' : 'tgray'} font-semibold mt-2 text-xl  text-center`}>{count}</p>
             </div>
             
         </div>

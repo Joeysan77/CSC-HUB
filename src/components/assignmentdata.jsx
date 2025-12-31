@@ -111,7 +111,7 @@ date: "15/12/2025",
 due: false ,
 subDate:'',
 dueDate: '',
-completed: true,
+completed: false,
 content: (
 <div>
         <p className="w80 tgray text-center my-5">
@@ -161,7 +161,7 @@ date: "15/12/2025",
 due: false,
 subDate:'08/02/2026',
 dueDate: '',
-completed: true,
+completed: false,
 content: (
 <>
 <p className="w80 tgray text-center my-5">Explain the following charts.</p>
@@ -185,7 +185,7 @@ index: 8,
 subject: "IGB 101",
 title: "Igbo Workbook Pages 1-5",
 date: "15/12/2025",
-due: true,
+due: false,
 dueDate: '05/01/2026',
 completed: false,
 subDate:'',

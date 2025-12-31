@@ -7,7 +7,7 @@ export default function AssignmentBoard() {
             
             
             
-            <p className="text-center my-5 text-xl font-semibold">Assignments</p>
+            <p className="text-center mt-18 mb-8 text-xl font-semibold">Assignments</p>
             
             <div className="border border-black/10 rounded-xl shadow w90 px-3 hsblue">
                 
@@ -37,7 +37,7 @@ export default function AssignmentBoard() {
     )
 }
 
-export function Detail({icon, text,count}) {
+export function Detail({icon, text, count}) {
     return (
         <div className=" bg-white flex between v-center border px-3 border-black/10 py-2 rounded-lg my-5 shadow hsgold-sm">
             <div className="v-center flex gap-3">
@@ -45,7 +45,7 @@ export function Detail({icon, text,count}) {
                 <p className="font-medium text-black/80">{text}</p>
             </div>
             <div className="flex w-5 center">
-                <p className="text-lg font-semibold ">{count}</p>
+                <p className={` ${count === 0 ? 'tgray' : ''} text-xl font-semibold `}>{count}</p>
             </div>
         </div>
     )
