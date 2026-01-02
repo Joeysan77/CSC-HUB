@@ -25,6 +25,8 @@ export default function Header() {
     } else if (path === '/announcements') {
         logo = false
         page="Announcements"
+    } else if (path === '/course_outlines') {
+        page='Course Outlines'
     }
     
     return (

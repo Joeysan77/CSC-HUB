@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import {Search} from './Utilities'
 import {important} from './announcementdata'
 import Announcement from './Announcement'
@@ -45,6 +45,10 @@ export default function Important() {
             onChange={e => setQuery(e.target.value)}
             className={showDatalist ? 'mt-10' : ''}
             value={query}
+            isEmpty={query === ''}
+            onClear={() => {
+                setQuery('')
+            }}
             onFocus={() => {
                 setShowDatalist(true)
             }}

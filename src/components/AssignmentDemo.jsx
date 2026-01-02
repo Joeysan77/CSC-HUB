@@ -1,8 +1,8 @@
 export default function AssignmentDemo({show, answers, onClose}) {
     return (
         <div className={`w-full h-full top-0 absolute left-0 ${show ? '' : ' translate-x-50 pointer-events-none opacity-0'} wter `}>
-            <div className="flex gap-5 w90">
-                <i onClick={onClose} className="far fa-arrow-left"></i>
+            <div className="flex gap-5 w90 v-center">
+                <i onClick={onClose} className="far fa-arrow-left text-lg"></i>
                 <p className="w90 text-lg font-medium">Answers</p>
             </div>
             

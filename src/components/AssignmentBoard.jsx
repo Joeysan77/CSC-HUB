@@ -9,7 +9,7 @@ export default function AssignmentBoard() {
             
             <p className="text-center mt-18 mb-8 text-xl font-semibold">Assignments</p>
             
-            <div className="border border-black/10 rounded-xl shadow w90 px-3 hsblue">
+            <div className="border border-black/10 rounded-xl shadow w90 px-3 py-4 hsblue">
                 
                 <Detail
                 icon="fa-calendar-exclamation tred"
@@ -39,7 +39,7 @@ export default function AssignmentBoard() {
 
 export function Detail({icon, text, count}) {
     return (
-        <div className=" bg-white flex between v-center border px-3 border-black/10 py-2 rounded-lg my-5 shadow hsgold-sm">
+        <div className=" bg-white flex between v-center border px-3 border-black/10 py-3  rounded-lg my-3 shadow hsgold-md">
             <div className="v-center flex gap-3">
                 <i className={`${icon} fas text-xl `}></i>
                 <p className="font-medium text-black/80">{text}</p>

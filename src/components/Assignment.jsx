@@ -65,7 +65,7 @@ export default function Assignment({subject, date, title, desc, due, dueDate, co
         }}
         />
 
-        <div className={` ${animate} bg-white shadow w90 rounded-xl my-8 pb-3 border-black/10 border relative `}>
+        <div className={` ${animate} bg-white shadow w90 rounded-xl my-8 pb-3 border-black/10 border relative hsblue-sm `}>
             <div className="flex between border-black/10 border-b w90 py-1.5 v-center ">
                 <p className="text-black/70 font-semibold">{subject}</p>
                 <p className="text-sm tgray">{date}</p>
@@ -95,7 +95,7 @@ export default function Assignment({subject, date, title, desc, due, dueDate, co
                 onClick={() => {
                     setShowView(true)
                 }}
-                 className="blue px-3 py-1.5 center gap-3 flex rounded-lg font-medium shadow text-sm relative">
+                 className="blue hblue-lg px-3 py-1.5 center gap-3 flex rounded-lg font-medium shadow text-sm relative">
                     <p>View</p>
                     
                     <i className="fas fa-chevron-right text-sm"></i>

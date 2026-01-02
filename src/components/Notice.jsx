@@ -45,6 +45,10 @@ export default function Notice() {
             onChange={e => setQuery(e.target.value)}
             className={showDatalist ? 'mt-10' : ''}
             value={query}
+            onClear={() => {
+                setQuery('')
+            }}
+            isEmpty={query === ''}
             onFocus={() => {
                 setShowDatalist(true)
             }}

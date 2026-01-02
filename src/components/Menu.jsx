@@ -13,6 +13,8 @@ export default function Menu({show, onClose}) {
         active = 'assignment' 
     } else if (path === '/announcements') {
         active = 'announcements'
+    } else if (path === '/course_outlines') {
+        active = 'course_outlines'
     }
 
     return (
@@ -49,6 +51,14 @@ export default function Menu({show, onClose}) {
                 text="Annoucements"
                 active={active === 'announcements'}
                 to="/announcements"
+                onClick={onClose}
+                />
+                
+                <Button
+                icon="fa-file-lines"
+                text="Course Outlines"
+                active={active === 'course_outlines'}
+                to="/course_outlines"
                 onClick={onClose}
                 />
                 

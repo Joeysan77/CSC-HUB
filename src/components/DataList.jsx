@@ -11,8 +11,8 @@ export function Asd({content, title, subject, desc,date, due, completed, onClick
     
         <div 
         onClick={onClick}
-         className="py-2 px-2 border-b border-black/20 bg-white">
-            <div className="flex between py-1 border-black/10 border-b px-3">
+         className="py-2.5 px-2 border-b border-black/20 bg-white">
+            <div className="flex between py-1 border-black/5 border-b px-3">
                 <div className="flex gap-8">
                     <p className="font-semibold text-xs ">{subject}</p>
                      <p className="tgray text-xs">{date}</p>

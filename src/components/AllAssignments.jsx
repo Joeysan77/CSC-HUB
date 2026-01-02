@@ -109,6 +109,10 @@ export default function AllAssignments() {
                    onChange={(e) => setInputValue(e.target.value)}
                    value={inputValue}
                    div={showDatalist ? 'mt-30' : ''}
+                   isEmpty={inputValue === ''}
+                   onClear={() => {
+                       setInputValue('')
+                   }}
                    onFocus={() => {
                        setShowDatalist(true)
                    }}
