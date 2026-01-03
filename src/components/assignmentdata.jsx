@@ -175,6 +175,7 @@ content: (
 <p className="w80 tgray text-center my-5">
 Using self formulated data to illustrate all, to be done on a 20 leaves exercise book.
 </p>
+<p className="tred my-3 text-center text-sm">Charts are to be drawn on a <b>Graph Book</b></p>
 </>
 ),
 contentText:

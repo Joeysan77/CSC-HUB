@@ -5,6 +5,7 @@ export const courses = [
   {
     courseCode: "MTH 101",
     title1: "Elementary Set Theory",
+    course: 'Mathematics',
     desc1: "Basic concepts of sets, operations, and Venn diagram representation.",
     content: (
       <div>
@@ -26,6 +27,7 @@ export const courses = [
   {
     courseCode: "PHY 101",
     title1: "Units and Dimensions",
+    course:  'Physics',
     desc1: "Fundamental units, derived units, and dimensional analysis.",
     content: (
       <div>
@@ -49,6 +51,7 @@ export const courses = [
   {
     courseCode: "CHM 101",
     title1: "SI Units and Conversions",
+    course: 'Chemistry',
     desc1: "Measurement systems, prefixes, and chemical unit conversions.",
     content: (
       <div>
@@ -75,6 +78,7 @@ export const courses = [
   {
     courseCode: "GST 103",
     title1: "Introduction to Philosophy",
+    course: 'Use Of English',
     desc1: "Meaning, scope, and branches of philosophy.",
     content: (
       <div>
@@ -93,6 +97,7 @@ export const courses = [
   {
     courseCode: "FRN 101",
     title1: "French Verb Tenses",
+    course: 'French',
     desc1: "Basic French verb tenses and usage.",
     content: (
       <div>
@@ -108,6 +113,7 @@ export const courses = [
   {
     courseCode: "GST 111",
     title1: "Language and Communication",
+    course: 'Use of English',
     desc1: "Language functions and effective communication processes.",
     content: (
       <div>

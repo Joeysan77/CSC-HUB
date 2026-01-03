@@ -10,6 +10,7 @@ export function AllCourses() {
                     courseCode={c.courseCode}
                     title1={c.title1}
                     desc1={c.desc1}
+                    course={c.course}
                     />
                 )
             })}
