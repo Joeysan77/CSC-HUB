@@ -5,6 +5,7 @@ import AllAssignments from './AllAssignments'
 import PendingAssignments from './PendingAssignments'
 import SubmittedAssignments from './SubmittedAssignments'
 import DueAssignments from './DueAssignments'
+import { motion, AnimatePresence } from 'framer-motion'
 
 export default function AssignmentList() {
 
@@ -51,9 +52,9 @@ export default function AssignmentList() {
             </div>
             
             
-            <div>
+            <AnimatePresence> 
                {activeAssignment[active]}
-            </div>
+            </AnimatePresence>
         </div>
     )
 }

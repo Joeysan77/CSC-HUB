@@ -21,6 +21,40 @@ export const data = [
       </p>
     )
   },
+  
+  {
+      id: 'MTH 101 Workbook Exercises',
+      status: 'notice',
+      date: 'Mon, 5th Jan 2026',
+      title: 'MTH 101 Workbook Exercises',
+      desc: 'The Mathematics lecturer has instructed that all exercises in the Mathematics workbook/manual must be completed.',
+      content:(
+          <>
+          <p className="my-2 mt-5 w90 text-black/70 text-center">The Mathematics lecturer has instructed that all exercises in the <b>Mathematics workbook/manual must be completed.</b></p>
+          <p className="my-2 w90 text-black/70">please note the following:</p>
+          <div>
+              
+          <List 
+          num='•'
+          item="This is part of the Continuous Assessment (Test)"
+          />
+          
+          <List 
+          num='•'
+          item="It carries 30 marks"
+          />
+          
+          <List 
+          num='•'
+          item="Submission is not immediate, but ensure all exercises are properly done ahead of time"
+          />
+          </div>
+          
+          <p className="my-5 w80 text-black/70 font-medium text-center">Kindly take this seriously and complete the exercises as required.</p>
+          
+          </>
+      )
+  },
 
   {
     id: 'physical-clearance',

@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react'
 import AssignmentView from './AssignmentView'
 import AnimatedContent from './animations/AnimatedContent'
+import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Assignment({subject, date, title, desc, due, dueDate, completed, subDate, content}) {
 
@@ -64,8 +65,11 @@ export default function Assignment({subject, date, title, desc, due, dueDate, co
             setShowView(false)
         }}
         />
-
-        <div className={` ${animate} bg-white shadow w90 rounded-xl my-8 pb-3 border-black/10 border relative hsblue-sm `}>
+        
+        
+        <motion.div
+         exit={{ opacity: 0, y: 100 }}
+         className={` ${animate} bg-white shadow w90 rounded-xl my-8 pb-3 border-black/10 border relative hsblue-sm `}>
             <div className="flex between border-black/10 border-b w90 py-1.5 v-center ">
                 <p className="text-black/70 font-semibold">{subject}</p>
                 <p className="text-sm tgray">{date}</p>
@@ -102,7 +106,8 @@ export default function Assignment({subject, date, title, desc, due, dueDate, co
                 </div>
             </div>
             
-        </div>
+        </motion.div>
+      
       
     </>
     )
