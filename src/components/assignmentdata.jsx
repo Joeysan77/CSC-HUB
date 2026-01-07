@@ -92,7 +92,7 @@ subject: "MTH 101",
 title: "Example 10.11 Exercises",
 date: "15/12/2025",
 due: true,
-dueDate: 'Fri 9th Jan 2026',
+dueDate: 'Fri, 9th Jan 2026',
 subDate:'',
 completed: false,
 content: (

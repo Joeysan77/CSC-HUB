@@ -5,10 +5,16 @@ import Header from './components/Header'
 import ScrollToTop from './components/ScrollToTop'
 import Announcements from './pages/Announcements'
 import CourseOutlines from './pages/CourseOutlines'
+import {useState, createContext, useContext} from 'react'
+
+export const AppContext = createContext(null)
 
 function App() {
+
+  const [asindex, setAsindex] = useState(0)
+
   return (
-  <>
+  <AppContext.Provider value={{ asindex, setAsindex }}>
     <Header/>
     <ScrollToTop/>
     <Routes>
@@ -17,7 +23,7 @@ function App() {
       <Route path="/announcements" element={<Announcements/>}/>
       <Route path="/course_outlines" element={<CourseOutlines/>}/>
     </Routes>
-  </>
+  </AppContext.Provider>
   );
 }
 

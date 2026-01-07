@@ -52,6 +52,7 @@ export default function DueAssignments() {
                    placeHolder='Search Due Assignments'
                    div='mt-8'
                    onChange={e => setQuery(e.target.value)}
+                    isEmpty={query === ''}
            
            />
                 <div className="md:w-[60%] md:ml-[20%]">
@@ -67,6 +68,7 @@ export default function DueAssignments() {
                          completed={a.completed}
                          subDate={a.subDate}
                          content={a.content}
+                        
                          />
                      )
                  })}

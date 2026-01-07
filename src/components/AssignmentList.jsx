@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useContext} from 'react'
 import {Filter} from './Utilities'
 import {assignments, pendingAssignments, submittedAssignments, dueAssignments} from './assignmentdata'
 import AllAssignments from './AllAssignments'
@@ -6,10 +6,12 @@ import PendingAssignments from './PendingAssignments'
 import SubmittedAssignments from './SubmittedAssignments'
 import DueAssignments from './DueAssignments'
 import { motion, AnimatePresence } from 'framer-motion'
+import {AppContext} from '../App'
+
 
 export default function AssignmentList() {
 
-    const [active, setActive] = useState(0)
+    const {asindex, setAsindex} = useContext(AppContext)
 
     const activeAssignment = [ <AllAssignments/>, <PendingAssignments/>, <SubmittedAssignments/>, <DueAssignments/>]
 
@@ -19,41 +21,41 @@ export default function AssignmentList() {
                 
                 <Filter 
                 text="All"
-                active={active === 0}
+                active={asindex === 0}
                 onClick={() => {
-                    setActive(0)
+                    setAsindex(0)
                 }}
                 />
                 
                 <Filter 
                 text="Due"
-                active={active === 3}
+                active={asindex === 3}
                 onClick={() => {
-                    setActive(3)
+                    setAsindex(3)
                 }}
                 />
                 
                 <Filter 
                 text="Pending"
-                active={active === 1}
+                active={asindex === 1}
                 onClick={() => {
-                    setActive(1)
+                    setAsindex(1)
                 }}
                 />
                 
                 <Filter 
                 text="Submitted"
-                active={active === 2}
+                active={asindex === 2}
                 className="!border-r-none"
                 onClick={() => {
-                    setActive(2)
+                    setAsindex(2)
                 }}
                 />
             </div>
             
             
             <AnimatePresence> 
-               {activeAssignment[active]}
+               {activeAssignment[asindex]}
             </AnimatePresence>
         </div>
     )

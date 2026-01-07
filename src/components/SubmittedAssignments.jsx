@@ -52,6 +52,7 @@ export default function SubmittedAssignments() {
                    placeHolder='Search Submitted Assignments'
                    div='mt-8'
                    onChange={e => setQuery(e.target.value)}
+                   isEmpty={query === ''}
            
            />
                 <div className="md:w-[60%] md:ml-[20%]">
