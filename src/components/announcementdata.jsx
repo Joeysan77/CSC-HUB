@@ -137,10 +137,30 @@ export const data = [
           <List num="11" item="Passports" desc="up to 8" />
           <List num="12" item="Confirmation of Admission Slip" desc="3 photocopies" />
         </div>
-
-        <p className="my-5 w90 text-black/70 text-center">
-          Payment of approved fees is mandatory for clearance.
-        </p>
+ <p className="my-2 w90 text-black/70 text-center">Students are to note the following approved fees required for departmental clearance:</p>  
+           
+         <div>  
+             <List  
+             num="•"  
+             item="Departmental Dues"  
+             desc="₦10,000"  
+             />   
+               
+             <List  
+             num="•"  
+             item="School/Faculty Dues"  
+             desc="₦5,000"  
+             />  
+               
+             <List  
+             num="•"  
+             item="Departmental Handbook"  
+             desc="₦2,500"  
+             />  
+         </div>  
+           
+         <p className="my-5 w90 text-black/70 text-center">Students are advised to comply strictly with the above, as<b> payment of these fees is required for successful clearance</b>.</p>  
+       
       </>
     )
   }
