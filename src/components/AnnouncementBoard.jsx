@@ -7,13 +7,14 @@ export default function AnnouncementBoard() {
     const [shake, setShake] = useState(false)
 
     return (
-        <Link to='/announcements'>
-            
-            <div className="w-[95%] ml-[2%]">
+      
+            <div className="w-[95%] ml-[2%] md:w-[40%]">
+        <Link to='/announcements' className="mb-10">
+          
                 
-                <div className="flex between px-4 py-2 v-center">
+                <div className="flex between px-4 py-2 v-center w-full">
                     
-                    <div className="flex v-center gap-5 my-5">
+                    <div className="flex v-center gap-5 my-5 mt-18">
                         <i
                         
                         onClick={(e) => {
@@ -25,7 +26,7 @@ export default function AnnouncementBoard() {
                             }, 2000)
                         }}
                          className={`${shake ? 'tgold fa-shake scale-110 pointer-events-none ' : 'tgray'} fa fa-bell text-2xl`}></i>
-                        <Link to='/announcements' className="text-xl font-semibold">Announcements</Link>
+                        <Link to='/announcements' className="text-xl font-semibold ">Announcements</Link>
                     </div>
                     
                     <Link to='/announcements'>
@@ -63,9 +64,9 @@ export default function AnnouncementBoard() {
                 </div>
                 
                 
-            </div>
             
         </Link>
+       </div>
     )
 }
 

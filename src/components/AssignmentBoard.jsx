@@ -8,11 +8,12 @@ export default function AssignmentBoard() {
     const {asindex, setAsindex} = useContext(AppContext)
 
     return (
+    <div className="w-[95%] ml-[2%] md:w-[40%]">
         <Link to="/assignment_hub" className="mb-10 ">
             
             
             
-            <p className="text-center mt-18 mb-8 text-xl font-semibold">Assignments</p>
+            <p className="text-center mt-18 mb-8 text-xl  font-semibold">Assignments</p>
             
             <div className="border border-black/10 rounded-xl shadow w90 px-3 py-4 hsblue">
                 
@@ -48,6 +49,8 @@ export default function AssignmentBoard() {
             <div className="line w90 my-10"></div>
             
         </Link>
+     
+     </div>
     )
 }
 

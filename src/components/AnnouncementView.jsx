@@ -10,8 +10,8 @@ export default function AnnouncementView({show, onClose, title, type, date, cont
         onClick={onClose}
         />
     
-        <div className={`${show ? '' : 'hide translate-y-50'} fixed left-0 bottom-0 rounded-t-4xl wter tblack z-[21] w-full max-h-[85vh] overflow-y-auto`}>
-            <div className="bg-white pb-5 rounded-t-4xl border-b border-black/10 pt-5">
+        <div className={`${show ? '' : 'hide translate-y-50'} fixed left-0 bottom-0 rounded-t-4xl wter tblack z-[21] w-full max-h-[85vh] overflow-y-auto md:w-[80%] md:ml-[10%]`}>
+            <div className="bg-white pb-5 rounded-t-4xl border-b border-black/10 pt-5 px-2">
                <div className="w90 relative pt-5">
                 <i onClick={onClose} className="far fa-xmark py-1 px-3 absolute  top-0 right-0 rounded-full blue-sm "></i>
             </div>

@@ -84,7 +84,7 @@ export default function Assignment({subject, date, title, desc, due, dueDate, co
                         <i className={`${staCol} ${icon} far  text-base px-1 rounded`}></i>
                         <p>{dueDater.slice(0, 3)}:</p>
                     </div>
-                    <p className="min-w-14 text-center font-semibold">{dueCheck}</p>
+                    <p className="min-w-16 text-center font-semibold">{dueCheck}</p>
                 </div>
             </div>
             

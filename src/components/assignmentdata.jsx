@@ -26,8 +26,8 @@ title: "Exercise 3: Manual Tasks",
 date: "15/12/2025",
 due: false ,
 dueDate: '',
-completed: false,
-subDate:'',
+completed: true,
+subDate:'Mon 12th, Jan 2026',
 content: (
 <p className="w80 tgray text-center my-5">
 Page 23, Exercise 3 of the COS 101 manual. Perform the tasks and staple it to the back of your manual for submission.
@@ -43,8 +43,8 @@ title: "Pages 1-12 Exercises",
 date: "15/12/2025",
 due: false ,
 dueDate: '',
-subDate:'',
-completed: false,
+subDate:'Mon 12th, Jan 2026',
+completed: true,
 content: (
 <p className="w80 tgray text-center my-5">
 Answer page 1-12 on your COS 101 manuals.
@@ -57,7 +57,7 @@ index: 3,
 subject: "GST 111",
 title: "Human Speech Organs Drawing",
 date: "15/12/2025",
-due: false ,
+due: false,
 dueDate: '',
 subDate:'',
 completed: false,
@@ -91,10 +91,10 @@ index: 5,
 subject: "MTH 101",
 title: "Example 10.11 Exercises",
 date: "15/12/2025",
-due: true,
-dueDate: 'Fri, 9th Jan 2026',
-subDate:'',
-completed: false,
+due: false,
+dueDate: '',
+subDate:'Mon 12th, Jan 2026',
+completed: true, 
 content: (
 <p className="w80 tgray text-center my-5">
 Page 117, Example 10.11 of the MTH 101 Textbook. Write out the example 10.11 on a Foolscap sheet of paper to be submitted.

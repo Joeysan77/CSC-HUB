@@ -7,8 +7,10 @@ export default function Home() {
     return (
         <div className="">
             <Hero/>
+                <div className="md:flex around w-full">
             <AssignmentBoard />
             <AnnouncementBoard/>
+                </div>
          
         </div>
     )

@@ -20,7 +20,7 @@ export default function AssignmentView({show, subject, date, onClose, title, con
         />
     
     
-        <div ref={scrollRef} className={`w-full  pb-5 bottom-0 fixed z-[21] max-h-[85vh] ${show ? '' : 'hide translate-y-50'} wter shadow rounded-t-3xl overflow-y-auto `}>
+        <div ref={scrollRef} className={` w-full pb-5 bottom-0 fixed z-[21] max-h-[85vh] ${show ? '' : 'hide translate-y-50'} wter shadow rounded-t-3xl overflow-y-auto left-0 md:w-[80%] md:ml-[10%] `}>
             
            
             
