@@ -74,19 +74,23 @@ export default function Assignment({subject, date, title, desc, due, dueDate, co
                 <p className="text-black/70 font-semibold">{subject}</p>
                 <p className="text-sm tgray">{date}</p>
             </div>
-            <div className="flex w90 v-center between py-5 gap-5 border-b border-black/10">
+            <div className="flex w90 v-center between pt-5 gap-5 ">
                 <div>
                     <p className="font-medium my-2">{title}</p>
-                    <p className="text-sm tgray">{desc}</p>
+                    
                 </div>
+                
                 <div className="flex text-xs gap-1 v-center text-black/70">
                     <div className="flex gap-2 v-center">
                         <i className={`${staCol} ${icon} far  text-base px-1 rounded`}></i>
                         <p>{dueDater.slice(0, 3)}:</p>
                     </div>
-                    <p className="min-w-16 text-center font-semibold">{dueCheck}</p>
+                    <p className="min-w-20 text-center font-semibold">{dueCheck}</p>
                 </div>
             </div>
+            <div className="w90 py-5 v-center border-b border-black/10 ">
+                    <p className="text-sm tgray">{desc}</p>
+                </div>
             
             <div className="flex w90 mt-3 between">
                 <div className={`${staCol} text-sm px-2 py-1 rounded-lg flex v-center gap-3`}>
