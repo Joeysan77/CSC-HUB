@@ -7,7 +7,7 @@ subject: "CHM 101",
 title: "Textbook Questions on Chapter 1",
 date: "15/12/2025",
 due: true ,
-dueDate: 'Mon 15th,Jan 2026',
+dueDate: 'Thu 15th,Jan 2026',
 subDate:'',
 completed: false,
 content: (
