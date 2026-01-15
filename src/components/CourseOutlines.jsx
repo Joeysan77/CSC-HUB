@@ -11,6 +11,7 @@ export function AllCourses() {
                     title1={c.title1}
                     desc1={c.desc1}
                     course={c.course}
+                    content={c.content}
                     />
                 )
             })}
