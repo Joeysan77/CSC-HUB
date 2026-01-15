@@ -167,11 +167,11 @@ export const data = [
   
   {
   id: 'chm-101-textbook-registration',
-  title: 'CHM 101 Textbook Registration',
+  title: 'CHM 101 Course Registration',
   date: 'Mon, 15th Jan 2026',
   status: 'important',
   desc:
-    'Students offering CHM 101 are to register their chemistry textbooks at the designated offices within the Chemistry Department and SOPS building.',
+    'Students offering CHM 101 are to register the course with their chemistry textbooks at the designated offices within the Chemistry Department and SOPS building.',
   content: (
     <>
       <p className="w90 text-black/70 text-center my-5">
