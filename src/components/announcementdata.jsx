@@ -168,7 +168,7 @@ export const data = [
   {
   id: 'chm-101-textbook-registration',
   title: 'CHM 101 Textbook Registration',
-  date: 'Mon, 20th Jan 2026',
+  date: 'Mon, 15th Jan 2026',
   status: 'notice',
   desc:
     'Students offering CHM 101 are to register their chemistry textbooks at the designated offices within the Chemistry Department and SOPS building.',
@@ -180,7 +180,7 @@ export const data = [
       </p>
 
       <div className="my-5">
-        <p className="font-medium w90 mt-20 text-lg font-medium flex v-center gap-4 "><i className="fa fa-location-dot rounded-full tgray py-2 px-2 border border-black/20 "></i> <p>Registration Venues</p></p>
+        <p className="font-medium w90 mt-20 text-lg font-medium flex v-center gap-4 "><div className="w-10 h-10 rounded-full tgray gray-xs border border-black/20 flex center" ><i className="fa fa-location-dot"></i></div> <p>Registration Venues</p></p>
         <List
           num="•"
           item="SOPS Building, Chemistry Department"
@@ -188,19 +188,19 @@ export const data = [
       </div>
 
       <div className="my-5">
-        <p className="font-medium w90 mt-20 text-lg font-medium flex v-center gap-4 "><i className="fa fa-calendar rounded-full tgray py-2 px-2 border border-black/20 "></i> <p>Days</p></p>
+        <p className="font-medium w90 mt-20 text-lg font-medium flex v-center gap-4 "><div className="w-10 h-10 rounded-full tgray gray-xs border border-black/20 flex center" ><i className="fa fa-calendar"></i></div><p>Days</p></p>
         <List num="•" item="Monday" />
         <List num="•" item="Tuesday" />
         <List num="•" item="Wednesday" />
       </div>
 
       <div className="my-5">
-        <p className="font-medium w90 mt-20 text-lg font-medium flex v-center gap-4 "><i className="fa fa-clock rounded-full tgray py-2 px-2 border border-black/20 "></i> <p>Time</p></p>
+        <p className="font-medium w90 mt-20 text-lg font-medium flex v-center gap-4 "><div className="w-10 h-10 rounded-full tgray gray-xs border border-black/20 flex center" ><i className="fa fa-clock"></i></div><p>Time</p></p>
         <List num="•" item="10:00am – 2:00pm" />
       </div>
 
       <div className="my-10">
-        <p className="font-medium w90 mt-20 text-lg font-medium flex v-center gap-4 "><i className="fa fa-user rounded-full tgray py-2 px-2 border border-black/20 "></i> <p>Registration Officers</p></p>
+        <p className="font-medium w90 mt-20 text-lg font-medium flex v-center gap-4 "><div className="w-10 h-10 rounded-full tgray gray-xs border border-black/20 flex center" ><i className="fa fa-user"></i></div> <p>Registration Officers</p></p>
 
         <List
           num="1"
