@@ -169,7 +169,7 @@ export const data = [
   id: 'chm-101-textbook-registration',
   title: 'CHM 101 Textbook Registration',
   date: 'Mon, 15th Jan 2026',
-  status: 'notice',
+  status: 'important',
   desc:
     'Students offering CHM 101 are to register their chemistry textbooks at the designated offices within the Chemistry Department and SOPS building.',
   content: (
@@ -188,7 +188,7 @@ export const data = [
       </div>
 
       <div className="my-5">
-        <p className="font-medium w90 mt-20 text-lg font-medium flex v-center gap-4 "><div className="w-10 h-10 rounded-full tgray gray-xs border border-black/20 flex center" ><i className="fa fa-calendar"></i></div><p>Days</p></p>
+        <p className="font-medium w90 mt-20 text-lg font-medium flex v-center gap-4 "><div className="w-10 h-10 rounded-full tgray gray-xs border border-black/20 flex center" ><i className="fa fa-calendar-days"></i></div><p>Days</p></p>
         <List num="•" item="Monday" />
         <List num="•" item="Tuesday" />
         <List num="•" item="Wednesday" />
