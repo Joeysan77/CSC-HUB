@@ -6,10 +6,10 @@ index: 0,
 subject: "CHM 101",
 title: "Textbook Questions on Chapter 1",
 date: "15/12/2025",
-due: true ,
-dueDate: 'Thu 15th,Jan 2026',
-subDate:'',
-completed: false,
+due: false ,
+dueDate: '',
+subDate:'Thu 15th,Jan 2026',
+completed: true,
 content: (
 <p className="w80 tgray text-center my-5">
 In the middle of your textbook, after page 130.
@@ -69,6 +69,7 @@ Draw and label the human speech organs. To be done on a white sheet of Cardboard
 contentText:
 "Draw and label the human speech organs. To be done on a white sheet of Cardboard Paper."
 },
+
 {
 index: 4,
 subject: "GST 111",
@@ -197,6 +198,27 @@ Pages 1 - 5 of your Igbo Workbook. More assignments may be added.
 ),
 contentText:
 "Pages 1 - 5 of your Igbo Workbook. More assignments may be added."
+},
+
+{
+    index: 9,
+    subject: 'FRN 101',
+    title: 'French Workbook Units 1-6',
+    date: "15/01/2026",
+    due: true,
+    dueDate: "Tue 3rd, Feb 2026",
+    completed: false,
+    subDate: "",
+    content: (
+    <p className="w80 tgray text-center my-5">
+      Answer units 1 to 6 of your French workbook.  
+      Submission is scheduled for the <b> first week of February</b>.
+    </p>
+  ),
+  contentText:
+    "Answer units 1 to 6 of your French workbook. Submission is scheduled for the first week of February."
+    
+    
 }
 ];
 
