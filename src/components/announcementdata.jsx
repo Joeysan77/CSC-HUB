@@ -163,7 +163,68 @@ export const data = [
        
       </>
     )
-  }
+  },
+  
+  {
+  id: 'chm-101-textbook-registration',
+  title: 'CHM 101 Textbook Registration',
+  date: 'Mon, 20th Jan 2026',
+  status: 'notice',
+  desc:
+    'Students offering CHM 101 are to register their chemistry textbooks at the designated offices within the Chemistry Department and SOPS building.',
+  content: (
+    <>
+      <p className="w90 text-black/70 text-center my-5">
+        Students offering <b>CHM 101</b> are required to register their
+        <b> Chemistry textbooks</b> at the designated offices listed below.
+      </p>
+
+      <div className="my-5">
+        <p className="font-medium w90 mt-20 text-lg font-medium flex v-center gap-4 "><i className="fa fa-location-dot rounded-full tgray py-2 px-2 border border-black/20 "></i> <p>Registration Venues</p></p>
+        <List
+          num="•"
+          item="SOPS Building, Chemistry Department"
+        />
+      </div>
+
+      <div className="my-5">
+        <p className="font-medium w90 mt-20 text-lg font-medium flex v-center gap-4 "><i className="fa fa-calendar rounded-full tgray py-2 px-2 border border-black/20 "></i> <p>Days</p></p>
+        <List num="•" item="Monday" />
+        <List num="•" item="Tuesday" />
+        <List num="•" item="Wednesday" />
+      </div>
+
+      <div className="my-5">
+        <p className="font-medium w90 mt-20 text-lg font-medium flex v-center gap-4 "><i className="fa fa-clock rounded-full tgray py-2 px-2 border border-black/20 "></i> <p>Time</p></p>
+        <List num="•" item="10:00am – 2:00pm" />
+      </div>
+
+      <div className="my-10">
+        <p className="font-medium w90 mt-20 text-lg font-medium flex v-center gap-4 "><i className="fa fa-user rounded-full tgray py-2 px-2 border border-black/20 "></i> <p>Registration Officers</p></p>
+
+        <List
+          num="1"
+          item="Dr. B. N. Anukam"
+          desc="Room 11B – SOHT, SLIT, SCIT, SOPS"
+        />
+
+        <List
+          num="2"
+          item="Otuuh and Obi"
+          desc="Room 102 – SEET, SOBS, SAAT, SOES, SESET"
+        />
+      </div>
+
+      <p className="w90 text-black/70 text-center my-8">
+        <b>Note:</b> Every course has its own designated registration day and
+        room. Students offering <b>CHM 101</b> should locate their faculty and
+        proceed for registration on any of the approved days listed above.
+      </p>
+      
+      <p className="w90 tred-lg text-sm my-5 text-center font-medium">You are to go with you Manuals and textbooks to be stamped, without them registration will not be approved</p>
+    </>
+  )
+}
 ];
 
 export const urgent  = data.filter(a => a.status === "urgent");
