@@ -175,7 +175,7 @@ export const data = [
   content: (
     <>
       <p className="w90 text-black/70 text-center my-5">
-        Students offering <b>CHM 101</b> are required to register their
+        Students offering <b>CHM 101</b> are required to register the course with their 
         <b> Chemistry textbooks</b> at the designated offices listed below.
       </p>
 
