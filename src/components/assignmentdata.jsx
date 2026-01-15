@@ -159,9 +159,9 @@ index: 7,
 subject: "STA 111",
 title: "Statistical Charts Explanation",
 date: "15/12/2025",
-due: false,
-subDate:'08/02/2026',
-dueDate: '',
+due: true,
+subDate:'',
+dueDate: 'Mon 19th, Jan 2026',
 completed: false,
 content: (
 <>
