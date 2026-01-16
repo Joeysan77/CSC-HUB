@@ -28,10 +28,10 @@ export default function OutlineOverlay({show, onClose, courseCode, course, conte
             </div>
             
             <div className="w90 pb-5 bg-white rounded-xl my-5 border border-black/10">
-                 <div className="flex border-b border-black/10 py-2 text-sm between px-2 v-center">
-                    <div className="flex gap-3">
-                        <i className="fa fa-file-lines tgray text-lg"></i>
-                        <p className="text-black/50">Course Outline</p>
+                 <div className="flex border-b border-black/10 py-2  between px-5 v-center">
+                    <div className="flex gap-3 v-center">
+                        <i className="far fa-file-lines tgray text-xl"></i>
+                        <p className="text-black/70 font-medium text-lg">Course Outline</p>
                     </div>
    <div></div>                 
                 </div>
