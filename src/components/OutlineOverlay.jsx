@@ -1,6 +1,6 @@
 import Dark from './Dark' 
 
-export default function OutlineOverlay({show, onClose, courseCode, course, content}) {
+export default function OutlineOverlay({show, onClose, courseCode, course, content, file}) {
     return (
         <>
         
@@ -37,7 +37,24 @@ export default function OutlineOverlay({show, onClose, courseCode, course, conte
                 </div>
                    {content}
                </div>
-            
+            <div className="border border-black/10 bg-white w90 rounded-xl my-10 py-3">
+                
+                {file ? (
+                     <a
+                href={file}
+                download={`${courseCode} by King Jayyyy`}
+                
+                 className="blue rounded-lg hblue-md active:scale-90 flex font-medium text-sm center gap-5 w90 shadow py-2">
+                    <p>Download {courseCode} PDF </p>
+                    <i className="far fa-download text-lg -mt-1"></i>
+                </a>
+                ) : (
+                    <div className="py-2">
+                        <p className="tred text-center font-medium">File Not Available</p>
+                    </div>
+                )}
+               
+            </div>
         </div>
         
         

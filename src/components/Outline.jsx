@@ -2,7 +2,7 @@ import {useState} from 'react'
 import OutlineOverlay from './OutlineOverlay'
 
 
-export default function Outline({courseCode, title1, desc1, course, content}) {
+export default function Outline({courseCode, title1, desc1, course, content, file}) {
 
     const [showOverlay, setShowOverlay] = useState(false)
 
@@ -14,6 +14,7 @@ export default function Outline({courseCode, title1, desc1, course, content}) {
         courseCode={courseCode}
         course={course}
         content={content}
+        file={file}
         onClose={() => {
             setShowOverlay(false)
         }}
