@@ -2,7 +2,7 @@ import {useState} from 'react'
 import OutlineOverlay from './OutlineOverlay'
 
 
-export default function Outline({courseCode, title1, desc1, course, content, file}) {
+export default function Outline({courseCode, title1, desc1, course, content, file, size}) {
 
     const [showOverlay, setShowOverlay] = useState(false)
 
@@ -15,6 +15,7 @@ export default function Outline({courseCode, title1, desc1, course, content, fil
         course={course}
         content={content}
         file={file}
+        size={size}
         onClose={() => {
             setShowOverlay(false)
         }}
@@ -30,7 +31,11 @@ export default function Outline({courseCode, title1, desc1, course, content, fil
             <div className="w90 py-3 border-black/10 border-b">
                 <div>
                     <p className="text-lg my-2 font-semibold">1.</p>
-                      <p className="font-medium">{title1}</p>
+                      <p className="font-medium">{title1 ? title1 : (
+                          <div>
+                              <p className="tred text-center text-sm">No Information Provided</p>
+                          </div>
+                      )}</p>
                 </div>
               
                 <p className="text-sm tgray w90 my-2">{desc1}</p>

@@ -8,6 +8,7 @@ export const courses = [
     course: "Mathematics",
     desc1: "Basic concepts of set theory, real numbers, sequences, series, quadratics, trigonometry, and complex numbers.",
     file: '/outlines/MTH 101.pdf',
+    size:'23',
     content: (
       <div>
         <List num="1" item="Elementary Of Set Theory" desc="Definition of sets, types of sets, subsets, union and intersection, complements, universal sets, and Venn diagrams." />
@@ -29,6 +30,7 @@ export const courses = [
     course: "Physics",
     desc1: "Units, vectors, kinematics, dynamics, projectiles, equilibrium, energy, motion, circular motion, SHM, center of mass, gravitation, coordinate geometry, and vector calculus.",
     file: '/outlines/PHY 101.pdf',
+    size:'35',
     content: (
       <div>
         <List num="1" item="Units and Dimensions" desc="Fundamental and derived units, dimensional analysis, and conversions." />
@@ -56,6 +58,7 @@ export const courses = [
     course: "Chemistry",
     desc1: "SI units, chemical reactions, mole concept, stoichiometry, atomic structure, periodic table, bonding, equilibria, gases, and thermodynamics.",
     file: '/outlines/CHM 101.pdf',
+    size:'26',
     content: (
       <div>
         <List num="1" item="S.I Unit and Conversion" desc="Measurement systems, SI units, prefixes, and conversions." />
@@ -139,5 +142,26 @@ export const courses = [
         <List num="10" item="Public Speaking" desc="Speech planning, delivery, and audience engagement." />
       </div>
     )
-  }
+  },
+  
+  {
+        courseCode: 'COS 101',
+        file: '/outlines/COS 101.pdf',
+        size: '6',
+        course: 'Computer Science'
+    },
+    
+    {
+        courseCode: 'IGB 101',
+        file: '/outlines/IGB 101.pdf',
+        size: '35', 
+        course: 'Igbo'
+    },
+    
+    {
+        courseCode: 'STA 111',
+        file: '/outlines/STA 111.pdf',
+        size: '16',
+        course:'Statistics'
+    }
 ];
